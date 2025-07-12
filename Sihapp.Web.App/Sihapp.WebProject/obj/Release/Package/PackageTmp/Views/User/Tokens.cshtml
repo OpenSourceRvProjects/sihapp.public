@@ -1,0 +1,71 @@
+﻿
+@model Sihapp.WebProject.Models.TokenUserCredentialsVM
+@{
+    ViewBag.Title = "Obtener token para desarrollo";
+}
+
+<h3>@ViewBag.Title.</h3>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+<div class="row" style="align-content: center;background-image:linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8)), url('../../registerImg.jpg');">
+
+
+    <div class="col-sm-12">
+
+
+
+        @using (Html.BeginForm("Tokens", "User", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+        {
+            @Html.AntiForgeryToken()
+            <h5 style="color: darkgreen"><u>Crea tu token de desarrollo proporcionando tu usuario y contraseña.</u></h5>
+            <hr />
+            @Html.ValidationSummary("", new { @class = "text-danger" })
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.Username, new { @class = "col-md-5 control-label" })
+                <div class="col-md-6">
+                    @Html.TextBoxFor(m => m.Username, new { @class = "form-control", @style = "border-color:darkblue" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.Password, new { @class = "col-md-5 control-label" })
+                <div class="col-md-6">
+                    @Html.PasswordFor(m => m.Password, new { @class = "form-control", @style = "border-color:darkblue" })
+                </div>
+            </div>
+
+
+            <div class="form-group" style="text-align:justify; text-align:center">
+                <span style="font-size:small"><strong>*GUARDA TU TOKEN, sihapp no guardará en ningun momento tu token de usuario por seguridad </strong></span>
+            </div>
+
+            if (Model != null && !string.IsNullOrEmpty(Model.Message))
+            {
+                <div class="form-group" style="text-align:justify; text-align:center">
+                    <span style="font-size:small"><strong>@Model.Message</strong></span>
+                </div>
+            }
+
+
+            <div class="form-group" style="text-align:justify; text-align:center">
+                <input type="submit" class="btn btn-default" style="border-color:limegreen" value="Obtener token" />
+            </div>
+            if (Model != null && !string.IsNullOrEmpty(Model.Token))
+            {
+                <div style="text-align:center">
+                    @*<span style="font-size:small"><strong>@Model.Token </strong></span>*@
+                    @Html.TextAreaFor(m => m.Token, new { @class = "form-control", @style = "margin-left:auto; margin-right:auto;", rows = 10, columns = 100 })
+                </div>
+            }
+
+        }
+
+
+
+    </div>
+
+
+
+</div>

@@ -1,0 +1,403 @@
+C:\Code\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Sihapp.AdminV1.dll.config
+C:\Code\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Sihapp.AdminV1.dll
+C:\Code\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Sihapp.AdminV1.pdb
+C:\Code\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\EntityFramework.dll
+C:\Code\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Code\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Code\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\EntityFramework.xml
+C:\Code\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Code\Sihapp.Web.App\Sihapp.AdminV1\obj\Debug\Sihapp.AdminV1.csprojResolveAssemblyReference.cache
+C:\Code\Sihapp.Web.App\Sihapp.AdminV1\obj\Debug\Sihapp.AdminV1.dll
+C:\Code\Sihapp.Web.App\Sihapp.AdminV1\obj\Debug\Sihapp.AdminV1.pdb
+C:\Code\Sihapp\Sihapp.AdminV1\bin\Debug\Sihapp.AdminV1.dll.config
+C:\Code\Sihapp\Sihapp.AdminV1\bin\Debug\Sihapp.AdminV1.dll
+C:\Code\Sihapp\Sihapp.AdminV1\bin\Debug\Sihapp.AdminV1.pdb
+C:\Code\Sihapp\Sihapp.AdminV1\bin\Debug\EntityFramework.dll
+C:\Code\Sihapp\Sihapp.AdminV1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Code\Sihapp\Sihapp.AdminV1\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Code\Sihapp\Sihapp.AdminV1\bin\Debug\EntityFramework.xml
+C:\Code\Sihapp\Sihapp.AdminV1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Code\Sihapp\Sihapp.AdminV1\bin\Debug\es\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+C:\Code\Sihapp\Sihapp.AdminV1\obj\Debug\Sihapp.AdminV1.csprojResolveAssemblyReference.cache
+C:\Code\Sihapp\Sihapp.AdminV1\obj\Debug\Sihapp.AdminV1.dll
+C:\Code\Sihapp\Sihapp.AdminV1\obj\Debug\Sihapp.AdminV1.pdb
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Sihapp.AdminV1.dll.config
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Sihapp.AdminV1.dll
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Sihapp.AdminV1.pdb
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\EntityFramework.dll
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\EntityFramework.xml
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\obj\Debug\Sihapp.AdminV1.csprojResolveAssemblyReference.cache
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\obj\Debug\Sihapp.AdminV1.dll
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\obj\Debug\Sihapp.AdminV1.pdb
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\ApplicationInsights.config
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\csc.exe
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\Microsoft.CodeAnalysis.dll
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\Microsoft.CSharp.Core.targets
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\System.Collections.Immutable.dll
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\System.Reflection.Metadata.dll
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\vbc.exe
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\VBCSCompiler.exe
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\VBCSCompiler.exe.config
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Sihapp.WebProject.dll
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.dll
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Optimization.dll
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Mvc.dll
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.Security.dll
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Owin.dll
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\TypeLite.dll
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Newtonsoft.Json.dll
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Helpers.dll
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\itextsharp.dll
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Razor.dll
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.WebPages.dll
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Sihapp.WebProject.pdb
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.xml
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Optimization.xml
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Mvc.xml
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.Security.xml
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\TypeLite.pdb
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Newtonsoft.Json.xml
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Helpers.xml
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\itextsharp.xml
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Razor.xml
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.WebPages.xml
+C:\Code Git\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\obj\Debug\Sihapp.AdminV1.csprojResolveAssemblyReference.cache
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\obj\Debug\Sihapp.AdminV1.dll
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\obj\Debug\Sihapp.AdminV1.pdb
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\ApplicationInsights.config
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\csc.exe
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\System.Collections.Immutable.dll
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\System.Reflection.Metadata.dll
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\vbc.exe
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\VBCSCompiler.exe
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\VBCSCompiler.exe.config
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Sihapp.AdminV1.dll.config
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Sihapp.AdminV1.dll
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Sihapp.AdminV1.pdb
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\EntityFramework.dll
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Sihapp.WebProject.dll
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.dll
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Optimization.dll
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Mvc.dll
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Owin.dll
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\TypeLite.dll
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Helpers.dll
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\itextsharp.dll
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Razor.dll
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.WebPages.dll
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Sihapp.WebProject.pdb
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\EntityFramework.xml
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.xml
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Optimization.xml
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Mvc.xml
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\TypeLite.pdb
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Helpers.xml
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\itextsharp.xml
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Razor.xml
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.WebPages.xml
+C:\Users\usuario HP\Desktop\Git2\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\ApplicationInsights.config
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\csc.exe
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\System.Collections.Immutable.dll
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\System.Reflection.Metadata.dll
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\vbc.exe
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\VBCSCompiler.exe
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\VBCSCompiler.exe.config
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Sihapp.AdminV1.dll.config
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Sihapp.AdminV1.dll
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Sihapp.AdminV1.pdb
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\EntityFramework.dll
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Sihapp.WebProject.dll
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.dll
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Optimization.dll
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Mvc.dll
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Owin.dll
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\TypeLite.dll
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Helpers.dll
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\itextsharp.dll
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Razor.dll
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.WebPages.dll
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Sihapp.WebProject.pdb
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\EntityFramework.xml
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.xml
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Optimization.xml
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Mvc.xml
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\TypeLite.pdb
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Helpers.xml
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\itextsharp.xml
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Razor.xml
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.WebPages.xml
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\obj\Debug\Sihapp.AdminV1.csprojResolveAssemblyReference.cache
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\obj\Debug\Sihapp.AdminV1.dll
+C:\Users\usuario HP\Desktop\Code\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\obj\Debug\Sihapp.AdminV1.pdb
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\ApplicationInsights.config
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\csc.exe
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\System.Collections.Immutable.dll
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\System.Reflection.Metadata.dll
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\vbc.exe
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\VBCSCompiler.exe
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\VBCSCompiler.exe.config
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Sihapp.AdminV1.dll.config
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Sihapp.AdminV1.dll
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Sihapp.AdminV1.pdb
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\EntityFramework.dll
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Sihapp.WebProject.dll
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.dll
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Optimization.dll
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Mvc.dll
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Owin.dll
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\TypeLite.dll
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Helpers.dll
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\itextsharp.dll
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Razor.dll
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.WebPages.dll
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Sihapp.WebProject.pdb
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Sihapp.WebProject.dll.config
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\EntityFramework.xml
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.xml
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Optimization.xml
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Mvc.xml
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\TypeLite.pdb
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Helpers.xml
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\itextsharp.xml
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Razor.xml
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.WebPages.xml
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\obj\Debug\Sihapp.AdminV1.csprojAssemblyReference.cache
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\obj\Debug\Sihapp.AdminV1.csproj.CopyComplete
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\obj\Debug\Sihapp.AdminV1.dll
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\obj\Debug\Sihapp.AdminV1.pdb
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\RestSharp.dll
+C:\Users\rolan\Desktop\SIHAPP CODE\Sihapp\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\RestSharp.xml
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\ApplicationInsights.config
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\csc.exe
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\System.Collections.Immutable.dll
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\System.Reflection.Metadata.dll
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\vbc.exe
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\VBCSCompiler.exe
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\VBCSCompiler.exe.config
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Sihapp.AdminV1.dll.config
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Sihapp.AdminV1.dll
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Sihapp.AdminV1.pdb
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\EntityFramework.dll
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Sihapp.WebProject.dll
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.dll
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Optimization.dll
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Mvc.dll
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Owin.dll
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\TypeLite.dll
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Helpers.dll
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\RestSharp.dll
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\itextsharp.dll
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Razor.dll
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.WebPages.dll
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Sihapp.WebProject.pdb
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Sihapp.WebProject.dll.config
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\EntityFramework.xml
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.xml
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Optimization.xml
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Mvc.xml
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\TypeLite.pdb
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Helpers.xml
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\RestSharp.xml
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\itextsharp.xml
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Razor.xml
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.WebPages.xml
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\obj\Debug\Sihapp.AdminV1.csproj.CoreCompileInputs.cache
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\obj\Debug\Sihapp.AdminV1.dll
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\obj\Debug\Sihapp.AdminV1.pdb
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\obj\Debug\Sihapp.AdminV1.csproj.AssemblyReference.cache
+C:\Users\rolan\OneDrive\Escritorio\SIHAPP LAST PROD CODE\Sihapp.Web.App\Sihapp.AdminV1\obj\Debug\Sihapp.A.19D2B636.Up2Date
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\ApplicationInsights.config
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\csc.exe
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\System.Collections.Immutable.dll
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\System.Reflection.Metadata.dll
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\vbc.exe
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\VBCSCompiler.exe
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\roslyn\VBCSCompiler.exe.config
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Sihapp.AdminV1.dll.config
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Sihapp.AdminV1.dll
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Sihapp.AdminV1.pdb
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\EntityFramework.dll
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Sihapp.WebProject.dll
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.dll
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Optimization.dll
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Mvc.dll
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Owin.dll
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\TypeLite.dll
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Helpers.dll
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\RestSharp.dll
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\itextsharp.dll
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Razor.dll
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.WebPages.dll
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Sihapp.WebProject.pdb
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Sihapp.WebProject.dll.config
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\EntityFramework.xml
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.xml
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Optimization.xml
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Mvc.xml
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\TypeLite.pdb
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Helpers.xml
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\RestSharp.xml
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\itextsharp.xml
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.Razor.xml
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.WebPages.xml
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\obj\Debug\Sihapp.AdminV1.csproj.CoreCompileInputs.cache
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\obj\Debug\Sihapp.AdminV1.dll
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\obj\Debug\Sihapp.AdminV1.pdb
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\obj\Debug\Sihapp.AdminV1.csprojAssemblyReference.cache
+C:\Users\rolan\OneDrive\Escritorio\Github\sihapp.public\Sihapp.Web.App\Sihapp.AdminV1\obj\Debug\Sihapp.AdminV1.csproj.CopyComplete

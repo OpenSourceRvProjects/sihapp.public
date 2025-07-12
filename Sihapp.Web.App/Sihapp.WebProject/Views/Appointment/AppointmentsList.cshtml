@@ -1,0 +1,340 @@
+﻿
+@{
+    ViewBag.Title = "Lista de citas";
+}
+<script src="~/Scripts/Controllers/Appointments/AppointmentListCtrl.js"></script>
+
+
+<span ng-init="backendData = @ViewBag.backendData"></span>
+<div ng-controller="appointmentListCtrl">
+
+
+
+    <div class="row">
+        <div class="col-sm-10">
+            <h2>Lista de citas</h2>
+        </div>
+        <div class="col-sm-2">
+            <br />
+            <button style="margin-left: 65px;" type="button" class="btn btn-info" ng-show="backendData.UserType !== 1" ng-click="showAddAppointmentModal()">Agregar cita</button>
+        </div>
+    </div>
+    <br />
+
+
+    <div class="panel panel-success">
+        <div class="panel panel-heading">
+            <div class="row">
+                <div class="col-sm-3">
+                    Fecha inicio: <input type="date" ng-model="backendData.StartDate" value="{{ backendData.StartDate | date: 'yyyy-MM-dd' }}" class="form-control" />
+                </div>
+                <div class="col-sm-3">
+                    Fecha final: <input type="date" ng-model="backendData.EndDate" value="{{ backendData.EndDate | date: 'yyyy-MM-dd' }}" class="form-control" />
+                </div>
+                <div class="col-sm-3">
+                    <button style="margin-top:20px" type="button" class="btn btn-success" ng-click="search()"><i class="fa fa-filter"></i> Buscar</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div ng-repeat="t in appointmentGroups">
+        <span class="pull-right" style="font-size:medium; color:limegreen; font-weight:bold">{{t.Date | date}} </span>
+        <table class="table nav-stacked">
+            <tr style="background-color:bisque">
+                <td>#</td>
+                <td>Profesional de salud</td>
+                <td>Paciente</td>
+                <td>Dirección</td>
+                <td>Fecha y hora de cita</td>
+                <td>Estatus</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr ng-repeat="i in t.Items track by $index">
+                <td>{{i.Number}}</td>
+                <td>{{i.ClinicMenName}}</td>
+                <td>{{i.PatientName}}</td>
+                <td>{{i.Address}}</td>
+                <td>{{i.AppointmentDate | date:'dd-MM-yyyy HH:mm:ss '}}</td>
+                <td>{{i.StatusText}}</td>
+                <td><a  ng-show="i.CanStartConsult" href="#" ng-click="selectAppointment(i)"><i class="fa fa-info-circle"></i></a></td>
+                <td><a href="#" ng-if="i.StatusText !== 'Terminado'" ng-click="openSendReminderPopUp(i)"><i class="fa fa-envelope"></i> Enviar recordatorio</a></td>
+                @*<td><input type="checkbox" ng-model="p.HasUser" ng-disabled="true" /></td>*@
+
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div id="addAppointmentModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" style="width:380px;">
+
+
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <div class="row">
+                        <div style="text-align:center">
+                            <h4 class="modal-title" style="padding-left:45px">
+                                <i class="fa fa-user"></i>
+                                Agregar cita
+                            </h4>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="panel-body">
+
+                        <div ng-show="backendData.UserType == 0">
+
+                            <form>
+                                <div style="text-align:center">
+                                    @*<label>Asignar a otro profesional de salud</label>
+                                        <input type="checkbox" ng-model="anotherClinicMen">*@
+                                    <br />
+                                    Día
+                                    <br />
+                                    <input class="input-sm" type="date" ng-model="newAppointmentDate" />
+                                    <br />
+                                    <br />
+                                    Hora
+                                    <br />
+                                    <input class="input-sm" type="time" ng-model="newAppointmentTime" step="300" />
+                                    <br />
+                                    <br />
+
+                                    Selecciona un paciente de la lista
+                                    <br />
+                                    <button type="button" class="btn btn-danger" ng-click="changePatientListMode()">No puedo ver la lista de manera correcta</button>
+                                    <div ng-show="!ui_selectMode">
+                                        Paciente
+                                        <br />
+                                        @*<select class="input-sm" ng-model="selectedPatient.Value">
+                                                <option ng-repeat="b in backendData.PatientList" value="{{b.Value}}">{{b.Text}}</option>
+
+                                            </select>*@
+                                        <select class="input-sm" ng-model="selectedPatient.Value"
+                                                ng-options="st.Value as st.Text for st in backendData.PatientList"></select>
+
+                                        <br />
+                                        <br />
+                                    </div>
+
+                                    <div ng-show="ui_selectMode">
+                                        Paciente
+                                        <br />
+                                        <ui-select ng-model="$parent.selectedPatient" theme="select2" style="min-width: 300px;" title="Busca tu paciente">
+                                            <ui-select-match placeholder="Selecciona paciente..">{{$select.selected.Text}}</ui-select-match>
+                                            <ui-select-choices repeat="p in backendData.PatientList track by $index"
+                                                               refresh="searchPatients($select.search)">
+
+                                                <div ng-bind-html="p.Text"></div>
+
+                                            </ui-select-choices>
+                                        </ui-select>
+
+                                        <span ng-show="responseMsg.length > 0" style="color:red">
+                                            {{responseMsg}}
+                                        </span>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+
+
+                        <div ng-show="backendData.UserType == 2">
+
+                            <form>
+                                <div>
+
+                                    Profesional de salud
+                                    <br />
+                                    <select class="input-sm" ng-model="selectedClinicMen.Value">
+                                        <option ng-repeat="b in backendData.ClinicMen" value="{{b.Value}}">{{b.Text}}</option>
+
+                                    </select>
+
+                                    <br />
+                                    <br />
+                                    <div ng-show="!ui_selectMode">
+                                        Paciente
+                                        <br />
+                                        @*<select class="input-sm" ng-model="selectedPatient.Value">
+                                                <option ng-repeat="b in backendData.PatientList" value="{{b.Value}}">{{b.Text}}</option>
+
+                                            </select>*@
+                                        <select class="input-sm" ng-model="selectedPatient.Value"
+                                                ng-options="st.Value as st.Text for st in backendData.PatientList"></select>
+
+                                        <br />
+                                        <br />
+                                    </div>
+
+                                    <div ng-show="ui_selectMode">
+                                        Paciente
+                                        <br />
+                                        <ui-select ng-model="$parent.selectedPatient" theme="select2" style="min-width: 300px;" title="Busca tu paciente">
+                                            <ui-select-match placeholder="Selecciona paciente..">{{$select.selected.Text}}</ui-select-match>
+                                            <ui-select-choices repeat="p in backendData.PatientList track by $index"
+                                                               refresh="searchPatients($select.search)">
+
+                                                <div ng-bind-html="p.Text"></div>
+
+                                            </ui-select-choices>
+                                        </ui-select>
+
+                                        <span ng-show="responseMsg.length > 0" style="color:red">
+                                            {{responseMsg}}
+                                        </span>
+                                    </div>
+                                    <br />
+                                    <br />
+                                    <input class="input-sm" type="date" ng-model="newAppointmentDate" />
+                                    <input class="input-sm" type="time" ng-model="newAppointmentTime" step="300" />
+                                    <br />
+                                    <br />
+
+                                    <span ng-show="responseMsg.length > 0" style="color:red">
+                                        {{responseMsg}}
+                                    </span>
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-success" ng-click="saveAppointment()">Guardar</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="appointmentPanel" class="modal fade" role="dialog">
+        <div class="modal-dialog" style="width:380px;">
+
+            <!-- Modal content-->
+            <div class="modal-content" style="width:450px">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <div class="row">
+                        <div  style="text-align:center">
+                            <h4 class="modal-title" style="padding-left:45px">
+                                <i class="fa fa-user"></i>
+                                Cita @*- {{selectedAppointmentID}}*@
+                            </h4>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="panel-body">
+
+
+                        <div>
+
+                            <form>
+                                <div class="row">
+
+                                    <div class="col-sm-12 text-center">
+                                        @*Editar cita*@
+                                        @*<select class="input-sm" ng-model="selectedAppointmentStatus.Value">
+                                                <option ng-repeat="b in backendData.AppointmentStatusCodes" value="{{b.Value}}">{{b.Text}}</option>
+
+                                            </select>*@
+
+                                        <select @*ng-disabled="selectedAppointmentStatus.Value === 4"*@ ng-disabled="true" class="input-sm" ng-model="selectedAppointmentStatus.Value"
+                                                ng-options="st.Value as st.Text for st in backendData.AppointmentStatusCodes"></select>
+
+                                    </div>
+
+                                    @*<div class="col-sm-6" style="padding-top: 20px">
+                                        <button ng-disabled="selectedAppointmentStatus.Value === 4" type="button" class="btn btn-primary" ng-click="goToConsult()"><i class="fa fa-save"></i> Modificar</button>
+                                        <br />
+                                    </div>*@
+                                </div>
+                                <div ng-show="responseMsg.length > 0" style="color:red">
+                                    {{responseMsg}}
+                                </div>
+                                @*<a href="~/Views/Consult/Consult.cshtml"*@
+
+                                <br />
+                                <div class="text-center" ng-if="!hideOpenConsultButton" ng-show="backendData.UserType !== 1">
+                                    <button type="button" class="btn btn-success" ng-click="openConsult()">Iniciar consulta</button>
+                                </div>
+
+                                <div class="text-center" ng-if="hideOpenConsultButton" ng-show="backendData.UserType !== 1">
+                                    <button type="button" class="btn btn-success" ng-click="goToConsult()">Ver consulta</button>
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    @*<button type="button" class="btn btn-success" ng-click="saveAppointment()">Guardar</button>*@
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="appointmentReminder" class="modal fade" role="dialog">
+        <div class="modal-dialog" style="width:380px;">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <div class="row">
+                        <div class="col-sm-12" style="top:20px">
+                            <h4 class="modal-title" style="padding-left:45px">
+                                <i class="fa fa-envelope"></i>
+                                Recordatorio
+                            </h4>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="panel-body">
+
+
+                        <div>
+
+                            <form>
+                                <div>
+
+                                    Se enviará un correo al paciente {{selectedAppointment.PatientName}}
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-success" ng-click="sendReminderEmail()">Enviar</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>

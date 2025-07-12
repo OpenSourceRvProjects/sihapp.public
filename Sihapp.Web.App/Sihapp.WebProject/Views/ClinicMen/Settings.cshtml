@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "Configuración";
+}
+<script src="~/Scripts/Controllers/ClinicMen/SettingsCtrl.js"></script>
+
+
+<h2>Configuración</h2>
+
+<span ng-init="model = @Html.ViewBag.backendData"></span>
+<div ng-controller="settingsCtrl">
+
+    <div class="row">
+        <div class="col-xs-6 form-group">
+            <label>Duración máxima de consultas</label>
+            <input ng-model="model.ToleranceMinutes" ng-if="editMode" class="form-control" type="text" placeholder="Minutos"/>
+            <h3 ng-show="!editMode">{{model.ToleranceMinutes}} minutos</h3>
+            
+        </div>
+        <div class="col-xs-6 form-group">
+            <label>RFC</label>
+            <input ng-model="model.RFC" ng-if="editMode" class="form-control" type="text" />
+            <h3 ng-show="!editMode">{{model.RFC}}  .</h3>
+        </div>
+
+        <div class="col-xs-6 form-group">
+            <label>Fecha de nacimiento</label>
+            <input ng-model="model.Birthdate" ng-if="editMode" class="form-control" type="date" placeholder="Fecha de nacimiento" />
+            <h3 ng-show="!editMode">{{model.Birthdate | date}}</h3>
+
+        </div>
+        <div class="col-xs-6 form-group">
+            <label>Celular</label>
+            <input ng-model="model.Cellphone" ng-if="editMode" class="form-control" type="text" />
+            <h3 ng-show="!editMode">{{model.Cellphone}}</h3>
+        </div>
+
+    </div>
+
+    <button  ng-if ="!editMode" type="button" class="btn btn-info" ng-click="onEditMode()"><i class="fa fa-pencil"></i> Editar</button>
+    <button ng-if ="editMode" type="button" class="btn btn-warning" ng-click="offEditMode()"><i class="fa fa-ban"></i> Cancelar</button>
+    <button ng-if="editMode" type="button" class="btn btn-primary" ng-click="updateSettings()"><i class="fa fa-refresh"></i> Actualizar</button>
+
+
+</div>

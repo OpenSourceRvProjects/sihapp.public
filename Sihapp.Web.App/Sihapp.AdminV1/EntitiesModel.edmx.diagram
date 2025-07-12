@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b30a524492ac4ed9a973c3bc5d09d373" Name="Diagram1">
+        <EntityTypeShape EntityType="SihappDBModel.C__MigrationHistory" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SihappDBModel.Appointment" Width="1.5" PointX="10.5" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SihappDBModel.AspNetRoles" Width="1.5" PointX="0.75" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="SihappDBModel.AspNetUserClaims" Width="1.5" PointX="5.25" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SihappDBModel.AspNetUserLogins" Width="1.5" PointX="5.25" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SihappDBModel.AspNetUsers" Width="1.5" PointX="3" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SihappDBModel.AuxiliarPersonal" Width="1.5" PointX="8.25" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SihappDBModel.Clinic" Width="1.5" PointX="3" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SihappDBModel.ClinicMen" Width="1.5" PointX="5.25" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="SihappDBModel.Consult" Width="1.5" PointX="12.75" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SihappDBModel.Patients" Width="1.5" PointX="5.25" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SihappDBModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SihappDBModel.Remission" Width="1.5" PointX="15" PointY="11.125" IsExpanded="true" />
+        <AssociationConnector Association="SihappDBModel.FK__Appointme__Clini__00200768" ManuallyRouted="false" />
+        <AssociationConnector Association="SihappDBModel.FK__Appointme__Clini__68487DD7" ManuallyRouted="false" />
+        <AssociationConnector Association="SihappDBModel.FK__Appointme__Creat__693CA210" ManuallyRouted="false" />
+        <AssociationConnector Association="SihappDBModel.FK__Appointme__Creat__6B24EA82" ManuallyRouted="false" />
+        <AssociationConnector Association="SihappDBModel.FK__Appointme__Patie__6754599E" ManuallyRouted="false" />
+        <AssociationConnector Association="SihappDBModel.FK__Consult__Appoint__6FE99F9F" ManuallyRouted="false" />
+        <AssociationConnector Association="SihappDBModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="SihappDBModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="SihappDBModel.FK__AuxiliarP__UserI__6383C8BA" ManuallyRouted="false" />
+        <AssociationConnector Association="SihappDBModel.FK__ClinicMen__UserI__4CA06362" ManuallyRouted="false" />
+        <AssociationConnector Association="SihappDBModel.FK__Patients__UserID__60A75C0F" ManuallyRouted="false" />
+        <AssociationConnector Association="SihappDBModel.FK__AuxiliarP__Clini__6477ECF3" ManuallyRouted="false" />
+        <AssociationConnector Association="SihappDBModel.FK__ClinicMen__Clini__4D94879B" ManuallyRouted="false" />
+        <AssociationConnector Association="SihappDBModel.FK__Patients__Clinic__5EBF139D" ManuallyRouted="false" />
+        <AssociationConnector Association="SihappDBModel.FK__Remission__Consu__7A672E12" ManuallyRouted="false" />
+        <AssociationConnector Association="SihappDBModel.AspNetUserRoles" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="SihappDBModel.ConsultImages" Width="1.5" PointX="18" PointY="11" />
+        <EntityTypeShape EntityType="SihappDBModel.SucessfullLogins" Width="1.5" PointX="5.375" PointY="0.75" />
+        <EntityTypeShape EntityType="SihappDBModel.Supplies" Width="1.5" PointX="7.5" PointY="5" />
+        <AssociationConnector Association="SihappDBModel.FK_ConsultImgClinic" />
+        <AssociationConnector Association="SihappDBModel.FK_SuppliesClinic" />
+        <AssociationConnector Association="SihappDBModel.FK_ClinicMenID" />
+        <AssociationConnector Association="SihappDBModel.FK_SuppliesClinicMen" />
+        <AssociationConnector Association="SihappDBModel.FK_ConsultID" />
+        <AssociationConnector Association="SihappDBModel.FK_PatientID" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

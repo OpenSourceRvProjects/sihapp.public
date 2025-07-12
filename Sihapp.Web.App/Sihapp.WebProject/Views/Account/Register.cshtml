@@ -1,0 +1,135 @@
+﻿@model Sihapp.WebProject.Models.RegisterViewModel
+@{
+    ViewBag.Title = "Registro de Clinica o consultorio particular";
+}
+
+<h3>@ViewBag.Title.</h3>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+<div class="row" style="align-content: center;background-image:linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8)), url('../../registerImg.jpg');">
+   
+    
+     <div class="col-sm-12">
+
+        
+
+        @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+        {
+            @Html.AntiForgeryToken()
+            <h5 style="color: darkgreen"><u>Vamos a crear tu nueva cuenta. Favor de verificar tus datos una vez creada tu cuenta.</u></h5>
+            <hr />
+            @Html.ValidationSummary("", new { @class = "text-danger" })
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.User, new { @class = "col-md-5 control-label" })
+                <div class="col-md-6">
+                    @Html.TextBoxFor(m => m.User, new { @class = "form-control", @style = "border-color:darkblue" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.Password, new { @class = "col-md-5 control-label" })
+                <div class="col-md-6">
+                    @Html.PasswordFor(m => m.Password, new { @class = "form-control", @style = "border-color:darkblue" })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-5 control-label" })
+                <div class="col-md-6">
+                    @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control", @style = "border-color:darkblue" })
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.ClinicName, new { @class = "col-md-5 control-label" })
+                <div class="col-md-6">
+                    @Html.TextBoxFor(m => m.ClinicName, new { @class = "form-control",@style = "border-color:darkblue" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.Name, new { @class = "col-md-5 control-label" })
+                <div class="col-md-6">
+                    @Html.TextBoxFor(m => m.Name, new { @class = "form-control", @style = "border-color:darkblue" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.LastName1, new { @class = "col-md-5 control-label" })
+                <div class="col-md-6">
+                    @Html.TextBoxFor(m => m.LastName1, new { @class = "form-control", @style = "border-color:darkblue" })
+                </div>
+            </div>
+
+
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.LastName2, new { @class = "col-md-5 control-label" })
+                <div class="col-md-6">
+                    @Html.TextBoxFor(m => m.LastName2, new { @class = "form-control", @style = "border-color:darkblue" })
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.BirthDate, new { @class = "col-md-5 control-label" })
+                <div class="col-md-6">
+                    @Html.TextBoxFor(m => m.BirthDate, new { @class = "form-control", @type = "date", @style = "border-color:darkblue" })
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.Address, new { @class = "col-md-5 control-label" })
+                <div class="col-md-6">
+                    @Html.TextBoxFor(m => m.Address, new { @class = "form-control", @style = "border-color:darkblue" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.Telephone, new { @class = "col-md-5 control-label" })
+                <div class="col-md-6">
+                    @Html.TextBoxFor(m => m.Telephone, new { @class = "form-control", @style = "border-color:darkblue" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.Email, new { @class = "col-md-5 control-label" })
+                <div class="col-md-6">
+                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @style = "border-color:darkblue" })
+                </div>
+            </div>
+
+      
+
+            <div class="form-group" style="text-align:justify; text-align:center">
+               <span style="font-size:small"><strong>*Al registrarte aceptas las <a href="../Account/TermsAndConditions"> condiciones de uso</a> </strong></span>
+            </div>
+
+            
+
+
+            <div class="form-group">
+                <div class="col-md-offset-5 col-md-6">
+                    <input type="submit" class="btn btn-default" style="border-color:limegreen" value="*Registrarme" />
+                </div>
+            </div>
+        }
+
+       
+
+    </div>
+
+    
+   
+</div>
+
+
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+

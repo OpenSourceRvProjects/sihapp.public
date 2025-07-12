@@ -1,0 +1,790 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SihappDBModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="__MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+      <PropertyRef Name="ContextKey" />
+    </Key>
+    <Property Name="MigrationId" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="ContextKey" Type="nvarchar" MaxLength="300" Nullable="false" />
+    <Property Name="Model" Type="varbinary(max)" Nullable="false" />
+    <Property Name="ProductVersion" Type="nvarchar" MaxLength="32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Appointment">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="CreatedClinicMen" Type="uniqueidentifier" />
+    <Property Name="CreatedAuxiliar" Type="uniqueidentifier" />
+    <Property Name="ClinicMenID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="PatientID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="AppointmentDate" Type="datetime" Nullable="false" />
+    <Property Name="Address" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Comments" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Type" Type="int" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="Number" Type="int" Nullable="false" />
+    <Property Name="ClinicID" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AspNetRoles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="256" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AspNetUserClaims">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="ClaimType" Type="nvarchar(max)" />
+    <Property Name="ClaimValue" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="AspNetUserLogins">
+    <Key>
+      <PropertyRef Name="LoginProvider" />
+      <PropertyRef Name="ProviderKey" />
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="LoginProvider" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="ProviderKey" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AspNetUserRoles">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="RoleId" Type="nvarchar" MaxLength="128" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AspNetUsers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="256" />
+    <Property Name="EmailConfirmed" Type="bit" Nullable="false" />
+    <Property Name="PasswordHash" Type="nvarchar(max)" />
+    <Property Name="SecurityStamp" Type="nvarchar(max)" />
+    <Property Name="PhoneNumber" Type="nvarchar(max)" />
+    <Property Name="PhoneNumberConfirmed" Type="bit" Nullable="false" />
+    <Property Name="TwoFactorEnabled" Type="bit" Nullable="false" />
+    <Property Name="LockoutEndDateUtc" Type="datetime" />
+    <Property Name="LockoutEnabled" Type="bit" Nullable="false" />
+    <Property Name="AccessFailedCount" Type="int" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="256" Nullable="false" />
+    <Property Name="UserType" Type="int" Nullable="false" />
+    <Property Name="ClinicNumber" Type="int" />
+    <Property Name="Admin" Type="bit" Nullable="false" />
+    <Property Name="ClinicID" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AuxiliarPersonal">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ClinicID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="UserID" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LastName1" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LastName2" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="BirthDate" Type="datetime" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="HireDate" Type="datetime" Nullable="false" />
+    <Property Name="Photo" Type="varbinary(max)" />
+    <Property Name="Address" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Number" Type="int" Nullable="false" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="512" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Clinic">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="256" Nullable="false" />
+    <Property Name="Number" Type="int" Nullable="false" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="Address" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Image" Type="varbinary" MaxLength="1" />
+    <Property Name="RFC" Type="nvarchar" MaxLength="128" />
+    <Property Name="EndSubscriptionDate" Type="datetime" Nullable="false" />
+    <Property Name="RegisterDate" Type="datetime" Nullable="false" />
+    <Property Name="AppLevel" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ClinicMen">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="UserID" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="ClinicID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Type" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="LastName1" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="LastName2" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="128" />
+    <Property Name="Address" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CellPhone" Type="nvarchar" MaxLength="128" />
+    <Property Name="Photo" Type="varbinary" MaxLength="1" />
+    <Property Name="RFC" Type="nvarchar" MaxLength="128" />
+    <Property Name="Cedula" Type="nvarchar" MaxLength="128" />
+    <Property Name="Specialty" Type="nvarchar" MaxLength="128" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="HireDate" Type="datetime" Nullable="false" />
+    <Property Name="BirthDate" Type="datetime" Nullable="false" />
+    <Property Name="Number" Type="int" Nullable="false" />
+    <Property Name="ConsultDuration" Type="int" />
+    <Property Name="Email" Type="nvarchar" MaxLength="1024" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Consult">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="AppointmentID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ConsultStartTime" Type="datetime" Nullable="false" />
+    <Property Name="ConsultEndTime" Type="datetime" />
+    <Property Name="Notes" Type="nvarchar(max)" />
+    <Property Name="Amount" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Number" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ConsultImages">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ConsultID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="PatientID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ClinicMenID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="Image" Type="varbinary(max)" />
+    <Property Name="BlobURL" Type="nvarchar(max)" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="ClinicID" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CustomFields">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="FieldType" Type="int" Nullable="false" />
+    <Property Name="EntityType" Type="int" Nullable="false" />
+    <Property Name="AllowAllEntities" Type="bit" Nullable="false" />
+    <Property Name="FieldText" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="ClinicID" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CustomFieldValues">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="RelatedEntityID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="CustomFieldId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Value" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Logs">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Message" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="InnerMessaje" Type="nvarchar(max)" />
+    <Property Name="EntityInnerMessage" Type="nvarchar(max)" />
+    <Property Name="IsException" Type="bit" Nullable="false" />
+    <Property Name="UserID" Type="uniqueidentifier" />
+    <Property Name="ClinicID" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="Patients">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="LastName1" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="LastName2" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="ClinicID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="UserID" Type="nvarchar" MaxLength="128" />
+    <Property Name="Birthdate" Type="datetime" Nullable="false" />
+    <Property Name="Deathdate" Type="datetime" />
+    <Property Name="Weight" Type="nvarchar" MaxLength="128" />
+    <Property Name="Height" Type="nvarchar" MaxLength="128" />
+    <Property Name="Address" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Photo" Type="varbinary" MaxLength="1" />
+    <Property Name="PatientNumber" Type="int" Nullable="false" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="512" />
+    <Property Name="Number" Type="int" Nullable="false" />
+    <Property Name="Notes" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Remission">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ConsultID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="GrandTotal" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="VAT" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="PatientID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Notes" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Number" Type="int" Nullable="false" />
+    <Property Name="ClinicMenID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="Payed" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="ClinicID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ExchangeRate" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RemissionPayment">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="RemissionID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="CreationDate" Type="datetime" Nullable="false" />
+    <Property Name="Comments" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ClinicID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="PaymentAmount" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="ExchangeRate" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SucessfullLogins">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="IP" Type="nvarchar" MaxLength="128" />
+    <Property Name="UserId" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ClinicID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ClinicNumber" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'SihappWebDB.dbo.SucessfullLoginsHistorical' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="SucessfullLoginsHistorical">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="Date" />
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="ClinicID" />
+      <PropertyRef Name="ClinicNumber" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="IP" Type="nvarchar" MaxLength="128" />
+    <Property Name="UserId" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ClinicID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ClinicNumber" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Supplies">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Number" Type="bigint" Nullable="false" />
+    <Property Name="InternalCode" Type="nvarchar" MaxLength="1024" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Cost" Type="money" Nullable="false" />
+    <Property Name="Price" Type="money" Nullable="false" />
+    <Property Name="PrivateUse" Type="bit" Nullable="false" />
+    <Property Name="ClinicMenID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="CurrentStock" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="VatAmount" Type="money" Nullable="false" />
+    <Property Name="IEPSAmount" Type="money" Nullable="false" />
+    <Property Name="ClinicID" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Appointme__Clini__6477ECF3">
+    <End Role="ClinicMen" Type="Self.ClinicMen" Multiplicity="1" />
+    <End Role="Appointment" Type="Self.Appointment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ClinicMen">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Appointment">
+        <PropertyRef Name="ClinicMenID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Appointme__Clini__656C112C">
+    <End Role="Clinic" Type="Self.Clinic" Multiplicity="1" />
+    <End Role="Appointment" Type="Self.Appointment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clinic">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Appointment">
+        <PropertyRef Name="ClinicID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Appointme__Creat__6754599E">
+    <End Role="ClinicMen" Type="Self.ClinicMen" Multiplicity="0..1" />
+    <End Role="Appointment" Type="Self.Appointment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ClinicMen">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Appointment">
+        <PropertyRef Name="CreatedClinicMen" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Appointme__Creat__68487DD7">
+    <End Role="AuxiliarPersonal" Type="Self.AuxiliarPersonal" Multiplicity="0..1" />
+    <End Role="Appointment" Type="Self.Appointment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AuxiliarPersonal">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Appointment">
+        <PropertyRef Name="CreatedAuxiliar" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Appointme__Patie__66603565">
+    <End Role="Patients" Type="Self.Patients" Multiplicity="1" />
+    <End Role="Appointment" Type="Self.Appointment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Patients">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Appointment">
+        <PropertyRef Name="PatientID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AuxiliarP__Clini__6D0D32F4">
+    <End Role="Clinic" Type="Self.Clinic" Multiplicity="1" />
+    <End Role="AuxiliarPersonal" Type="Self.AuxiliarPersonal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clinic">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="AuxiliarPersonal">
+        <PropertyRef Name="ClinicID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AuxiliarP__UserI__6E01572D">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1" />
+    <End Role="AuxiliarPersonal" Type="Self.AuxiliarPersonal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AuxiliarPersonal">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ClinicMen__Clini__6FE99F9F">
+    <End Role="Clinic" Type="Self.Clinic" Multiplicity="1" />
+    <End Role="ClinicMen" Type="Self.ClinicMen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clinic">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ClinicMen">
+        <PropertyRef Name="ClinicID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ClinicMen__UserI__6EF57B66">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1" />
+    <End Role="ClinicMen" Type="Self.ClinicMen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ClinicMen">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Consult__Appoint__70DDC3D8">
+    <End Role="Appointment" Type="Self.Appointment" Multiplicity="1" />
+    <End Role="Consult" Type="Self.Consult" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Appointment">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Consult">
+        <PropertyRef Name="AppointmentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__CustomFie__Clini__75A278F5">
+    <End Role="Clinic" Type="Self.Clinic" Multiplicity="1" />
+    <End Role="CustomFields" Type="Self.CustomFields" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clinic">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CustomFields">
+        <PropertyRef Name="ClinicID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__CustomFie__Custo__76969D2E">
+    <End Role="CustomFields" Type="Self.CustomFields" Multiplicity="1" />
+    <End Role="CustomFieldValues" Type="Self.CustomFieldValues" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CustomFields">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CustomFieldValues">
+        <PropertyRef Name="CustomFieldId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Patients__Clinic__787EE5A0">
+    <End Role="Clinic" Type="Self.Clinic" Multiplicity="1" />
+    <End Role="Patients" Type="Self.Patients" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clinic">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Patients">
+        <PropertyRef Name="ClinicID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Patients__UserID__778AC167">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="0..1" />
+    <End Role="Patients" Type="Self.Patients" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Patients">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Remission__Clini__7A672E12">
+    <End Role="Clinic" Type="Self.Clinic" Multiplicity="1" />
+    <End Role="Remission" Type="Self.Remission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clinic">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Remission">
+        <PropertyRef Name="ClinicID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Remission__Clini__7C4F7684">
+    <End Role="Clinic" Type="Self.Clinic" Multiplicity="1" />
+    <End Role="RemissionPayment" Type="Self.RemissionPayment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clinic">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="RemissionPayment">
+        <PropertyRef Name="ClinicID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Remission__Consu__797309D9">
+    <End Role="Consult" Type="Self.Consult" Multiplicity="1" />
+    <End Role="Remission" Type="Self.Remission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Consult">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Remission">
+        <PropertyRef Name="ConsultID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Remission__Remis__7B5B524B">
+    <End Role="Remission" Type="Self.Remission" Multiplicity="1" />
+    <End Role="RemissionPayment" Type="Self.RemissionPayment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Remission">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="RemissionPayment">
+        <PropertyRef Name="RemissionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ClinicMenID">
+    <End Role="ClinicMen" Type="Self.ClinicMen" Multiplicity="1" />
+    <End Role="ConsultImages" Type="Self.ConsultImages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ClinicMen">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ConsultImages">
+        <PropertyRef Name="ClinicMenID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ConsultID">
+    <End Role="Consult" Type="Self.Consult" Multiplicity="1" />
+    <End Role="ConsultImages" Type="Self.ConsultImages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Consult">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ConsultImages">
+        <PropertyRef Name="ConsultID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ConsultImgClinic">
+    <End Role="Clinic" Type="Self.Clinic" Multiplicity="1" />
+    <End Role="ConsultImages" Type="Self.ConsultImages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clinic">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ConsultImages">
+        <PropertyRef Name="ClinicID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserClaims" Type="Self.AspNetUserClaims" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserClaims">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserLogins" Type="Self.AspNetUserLogins" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserLogins">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId">
+    <End Role="AspNetRoles" Type="Self.AspNetRoles" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserRoles" Type="Self.AspNetUserRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetRoles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserRoles">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserRoles" Type="Self.AspNetUserRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserRoles">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PatientID">
+    <End Role="Patients" Type="Self.Patients" Multiplicity="1" />
+    <End Role="ConsultImages" Type="Self.ConsultImages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Patients">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ConsultImages">
+        <PropertyRef Name="PatientID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SuppliesClinic">
+    <End Role="Clinic" Type="Self.Clinic" Multiplicity="1" />
+    <End Role="Supplies" Type="Self.Supplies" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clinic">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Supplies">
+        <PropertyRef Name="ClinicID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SuppliesClinicMen">
+    <End Role="ClinicMen" Type="Self.ClinicMen" Multiplicity="1" />
+    <End Role="Supplies" Type="Self.Supplies" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ClinicMen">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Supplies">
+        <PropertyRef Name="ClinicMenID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SihappDBModel1StoreContainer">
+    <EntitySet Name="__MigrationHistory" EntityType="Self.__MigrationHistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Appointment" EntityType="Self.Appointment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetRoles" EntityType="Self.AspNetRoles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUserClaims" EntityType="Self.AspNetUserClaims" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUserLogins" EntityType="Self.AspNetUserLogins" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUserRoles" EntityType="Self.AspNetUserRoles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUsers" EntityType="Self.AspNetUsers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AuxiliarPersonal" EntityType="Self.AuxiliarPersonal" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Clinic" EntityType="Self.Clinic" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ClinicMen" EntityType="Self.ClinicMen" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Consult" EntityType="Self.Consult" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ConsultImages" EntityType="Self.ConsultImages" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CustomFields" EntityType="Self.CustomFields" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CustomFieldValues" EntityType="Self.CustomFieldValues" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Logs" EntityType="Self.Logs" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Patients" EntityType="Self.Patients" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Remission" EntityType="Self.Remission" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RemissionPayment" EntityType="Self.RemissionPayment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SucessfullLogins" EntityType="Self.SucessfullLogins" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Supplies" EntityType="Self.Supplies" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SucessfullLoginsHistorical" EntityType="Self.SucessfullLoginsHistorical" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [SucessfullLoginsHistorical].[ID] AS [ID], 
+    [SucessfullLoginsHistorical].[Date] AS [Date], 
+    [SucessfullLoginsHistorical].[IP] AS [IP], 
+    [SucessfullLoginsHistorical].[UserId] AS [UserId], 
+    [SucessfullLoginsHistorical].[ClinicID] AS [ClinicID], 
+    [SucessfullLoginsHistorical].[ClinicNumber] AS [ClinicNumber]
+    FROM [dbo].[SucessfullLoginsHistorical] AS [SucessfullLoginsHistorical]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK__Appointme__Clini__6477ECF3" Association="Self.FK__Appointme__Clini__6477ECF3">
+      <End Role="ClinicMen" EntitySet="ClinicMen" />
+      <End Role="Appointment" EntitySet="Appointment" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Appointme__Clini__656C112C" Association="Self.FK__Appointme__Clini__656C112C">
+      <End Role="Clinic" EntitySet="Clinic" />
+      <End Role="Appointment" EntitySet="Appointment" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Appointme__Creat__6754599E" Association="Self.FK__Appointme__Creat__6754599E">
+      <End Role="ClinicMen" EntitySet="ClinicMen" />
+      <End Role="Appointment" EntitySet="Appointment" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Appointme__Creat__68487DD7" Association="Self.FK__Appointme__Creat__68487DD7">
+      <End Role="AuxiliarPersonal" EntitySet="AuxiliarPersonal" />
+      <End Role="Appointment" EntitySet="Appointment" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Appointme__Patie__66603565" Association="Self.FK__Appointme__Patie__66603565">
+      <End Role="Patients" EntitySet="Patients" />
+      <End Role="Appointment" EntitySet="Appointment" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AuxiliarP__Clini__6D0D32F4" Association="Self.FK__AuxiliarP__Clini__6D0D32F4">
+      <End Role="Clinic" EntitySet="Clinic" />
+      <End Role="AuxiliarPersonal" EntitySet="AuxiliarPersonal" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AuxiliarP__UserI__6E01572D" Association="Self.FK__AuxiliarP__UserI__6E01572D">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AuxiliarPersonal" EntitySet="AuxiliarPersonal" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ClinicMen__Clini__6FE99F9F" Association="Self.FK__ClinicMen__Clini__6FE99F9F">
+      <End Role="Clinic" EntitySet="Clinic" />
+      <End Role="ClinicMen" EntitySet="ClinicMen" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ClinicMen__UserI__6EF57B66" Association="Self.FK__ClinicMen__UserI__6EF57B66">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="ClinicMen" EntitySet="ClinicMen" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Consult__Appoint__70DDC3D8" Association="Self.FK__Consult__Appoint__70DDC3D8">
+      <End Role="Appointment" EntitySet="Appointment" />
+      <End Role="Consult" EntitySet="Consult" />
+    </AssociationSet>
+    <AssociationSet Name="FK__CustomFie__Clini__75A278F5" Association="Self.FK__CustomFie__Clini__75A278F5">
+      <End Role="Clinic" EntitySet="Clinic" />
+      <End Role="CustomFields" EntitySet="CustomFields" />
+    </AssociationSet>
+    <AssociationSet Name="FK__CustomFie__Custo__76969D2E" Association="Self.FK__CustomFie__Custo__76969D2E">
+      <End Role="CustomFields" EntitySet="CustomFields" />
+      <End Role="CustomFieldValues" EntitySet="CustomFieldValues" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Patients__Clinic__787EE5A0" Association="Self.FK__Patients__Clinic__787EE5A0">
+      <End Role="Clinic" EntitySet="Clinic" />
+      <End Role="Patients" EntitySet="Patients" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Patients__UserID__778AC167" Association="Self.FK__Patients__UserID__778AC167">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="Patients" EntitySet="Patients" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Remission__Clini__7A672E12" Association="Self.FK__Remission__Clini__7A672E12">
+      <End Role="Clinic" EntitySet="Clinic" />
+      <End Role="Remission" EntitySet="Remission" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Remission__Clini__7C4F7684" Association="Self.FK__Remission__Clini__7C4F7684">
+      <End Role="Clinic" EntitySet="Clinic" />
+      <End Role="RemissionPayment" EntitySet="RemissionPayment" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Remission__Consu__797309D9" Association="Self.FK__Remission__Consu__797309D9">
+      <End Role="Consult" EntitySet="Consult" />
+      <End Role="Remission" EntitySet="Remission" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Remission__Remis__7B5B524B" Association="Self.FK__Remission__Remis__7B5B524B">
+      <End Role="Remission" EntitySet="Remission" />
+      <End Role="RemissionPayment" EntitySet="RemissionPayment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ClinicMenID" Association="Self.FK_ClinicMenID">
+      <End Role="ClinicMen" EntitySet="ClinicMen" />
+      <End Role="ConsultImages" EntitySet="ConsultImages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ConsultID" Association="Self.FK_ConsultID">
+      <End Role="Consult" EntitySet="Consult" />
+      <End Role="ConsultImages" EntitySet="ConsultImages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ConsultImgClinic" Association="Self.FK_ConsultImgClinic">
+      <End Role="Clinic" EntitySet="Clinic" />
+      <End Role="ConsultImages" EntitySet="ConsultImages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserClaims" EntitySet="AspNetUserClaims" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserLogins" EntitySet="AspNetUserLogins" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId" Association="Self.FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId">
+      <End Role="AspNetRoles" EntitySet="AspNetRoles" />
+      <End Role="AspNetUserRoles" EntitySet="AspNetUserRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserRoles" EntitySet="AspNetUserRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PatientID" Association="Self.FK_PatientID">
+      <End Role="Patients" EntitySet="Patients" />
+      <End Role="ConsultImages" EntitySet="ConsultImages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SuppliesClinic" Association="Self.FK_SuppliesClinic">
+      <End Role="Clinic" EntitySet="Clinic" />
+      <End Role="Supplies" EntitySet="Supplies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SuppliesClinicMen" Association="Self.FK_SuppliesClinicMen">
+      <End Role="ClinicMen" EntitySet="ClinicMen" />
+      <End Role="Supplies" EntitySet="Supplies" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

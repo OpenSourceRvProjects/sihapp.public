@@ -1,0 +1,987 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\sihapp.webproject\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|solutionrelative:sihapp.webproject\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Sihapp.WebProject||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\sihapp.webproject\\backend\\services\\remissionnotesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|solutionrelative:sihapp.webproject\\backend\\services\\remissionnotesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|c:\\users\\rolan\\onedrive\\escritorio\\github\\sihapp.public\\sihapp.web.app\\sihapp.webproject\\backend\\dataaccess\\sihappmodelentities.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|solutionrelative:sihapp.webproject\\backend\\dataaccess\\sihappmodelentities.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\sihapp.webproject\\backend\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|solutionrelative:sihapp.webproject\\backend\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\sihapp.webproject\\backend\\services\\patientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|solutionrelative:sihapp.webproject\\backend\\services\\patientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|c:\\users\\rolan\\onedrive\\escritorio\\github\\sihapp.public\\sihapp.web.app\\sihapp.webproject\\views\\account\\sihappcrew.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|solutionrelative:sihapp.webproject\\views\\account\\sihappcrew.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|c:\\users\\rolan\\onedrive\\escritorio\\github\\sihapp.public\\sihapp.web.app\\sihapp.webproject\\views\\account\\termsandconditions.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|solutionrelative:sihapp.webproject\\views\\account\\termsandconditions.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\obj\\Debug\\Package\\PackageTmp\\Scripts\\Controllers\\Patients\\PatientsListCtrl.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Sihapp.WebProject\\obj\\Debug\\Package\\PackageTmp\\Scripts\\Controllers\\Patients\\PatientsListCtrl.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\obj\\Debug\\Package\\PackageTmp\\Scripts\\Controllers\\Appointments\\AppointmentListCtrl.js.map||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Sihapp.WebProject\\obj\\Debug\\Package\\PackageTmp\\Scripts\\Controllers\\Appointments\\AppointmentListCtrl.js.map||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\obj\\Debug\\Package\\PackageTmp\\Scripts\\Controllers\\Appointments\\AppointmentListCtrl.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Sihapp.WebProject\\obj\\Debug\\Package\\PackageTmp\\Scripts\\Controllers\\Appointments\\AppointmentListCtrl.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\sihapp.webproject\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|solutionrelative:sihapp.webproject\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\sihapp.webproject\\scripts\\controllers\\patients\\patientslistctrl.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|solutionrelative:sihapp.webproject\\scripts\\controllers\\patients\\patientslistctrl.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\sihapp.webproject\\views\\patients\\patientslist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|solutionrelative:sihapp.webproject\\views\\patients\\patientslist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\sihapp.webproject\\controllers\\patientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|solutionrelative:sihapp.webproject\\controllers\\patientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\sihapp.webproject\\web.debug.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|solutionrelative:sihapp.webproject\\web.debug.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\sihapp.webproject\\web.release.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|solutionrelative:sihapp.webproject\\web.release.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\sihapp.webproject\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|solutionrelative:sihapp.webproject\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\sihapp.webproject\\backend\\dataaccess\\sihappmodelentities.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|solutionrelative:sihapp.webproject\\backend\\dataaccess\\sihappmodelentities.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\sihapp.webproject\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|solutionrelative:sihapp.webproject\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45370F15-9306-4797-BC0A-60117E017729}|Sihapp.AdminV1\\Sihapp.AdminV1.csproj|C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\sihapp.adminv1\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{45370F15-9306-4797-BC0A-60117E017729}|Sihapp.AdminV1\\Sihapp.AdminV1.csproj|solutionrelative:sihapp.adminv1\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45370F15-9306-4797-BC0A-60117E017729}|Sihapp.AdminV1\\Sihapp.AdminV1.csproj|C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\sihapp.adminv1\\entitiesmodel.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{45370F15-9306-4797-BC0A-60117E017729}|Sihapp.AdminV1\\Sihapp.AdminV1.csproj|solutionrelative:sihapp.adminv1\\entitiesmodel.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45370F15-9306-4797-BC0A-60117E017729}|Sihapp.AdminV1\\Sihapp.AdminV1.csproj|C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\sihapp.adminv1\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{45370F15-9306-4797-BC0A-60117E017729}|Sihapp.AdminV1\\Sihapp.AdminV1.csproj|solutionrelative:sihapp.adminv1\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45370F15-9306-4797-BC0A-60117E017729}|Sihapp.AdminV1\\Sihapp.AdminV1.csproj|C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\sihapp.adminv1\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45370F15-9306-4797-BC0A-60117E017729}|Sihapp.AdminV1\\Sihapp.AdminV1.csproj|solutionrelative:sihapp.adminv1\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\sihapp.webproject\\controllers\\sihappmanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|solutionrelative:sihapp.webproject\\controllers\\sihappmanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\sihapp.webproject\\backend\\services\\managerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|solutionrelative:sihapp.webproject\\backend\\services\\managerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\sihapp.webproject\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|solutionrelative:sihapp.webproject\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\sihapp.webproject\\controllers\\managecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|solutionrelative:sihapp.webproject\\controllers\\managecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\sihapp.webproject\\scripts\\controllers\\utils\\utils.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|solutionrelative:sihapp.webproject\\scripts\\controllers\\utils\\utils.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\sihapp.webproject\\backend\\services\\utilservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|solutionrelative:sihapp.webproject\\backend\\services\\utilservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\sihapp.webproject\\backend\\serviceerror.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|solutionrelative:sihapp.webproject\\backend\\serviceerror.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\sihapp.webproject\\backend\\exceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|solutionrelative:sihapp.webproject\\backend\\exceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\sihapp.webproject\\backend\\services\\pdfdocumentsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|solutionrelative:sihapp.webproject\\backend\\services\\pdfdocumentsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\sihapp.webproject\\backend\\services\\jsonnetresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|solutionrelative:sihapp.webproject\\backend\\services\\jsonnetresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDE74BFD-F339-44F6-A123-57D2017B3B31}|Sihapp.InfoWeb\\Sihapp.InfoWeb.csproj|C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\sihapp.infoweb\\project_readme.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDE74BFD-F339-44F6-A123-57D2017B3B31}|Sihapp.InfoWeb\\Sihapp.InfoWeb.csproj|solutionrelative:sihapp.infoweb\\project_readme.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDE74BFD-F339-44F6-A123-57D2017B3B31}|Sihapp.InfoWeb\\Sihapp.InfoWeb.csproj|C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\sihapp.infoweb\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDE74BFD-F339-44F6-A123-57D2017B3B31}|Sihapp.InfoWeb\\Sihapp.InfoWeb.csproj|solutionrelative:sihapp.infoweb\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDE74BFD-F339-44F6-A123-57D2017B3B31}|Sihapp.InfoWeb\\Sihapp.InfoWeb.csproj|C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\sihapp.infoweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDE74BFD-F339-44F6-A123-57D2017B3B31}|Sihapp.InfoWeb\\Sihapp.InfoWeb.csproj|solutionrelative:sihapp.infoweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDE74BFD-F339-44F6-A123-57D2017B3B31}|Sihapp.InfoWeb\\Sihapp.InfoWeb.csproj|C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\sihapp.infoweb\\views\\home\\prices.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDE74BFD-F339-44F6-A123-57D2017B3B31}|Sihapp.InfoWeb\\Sihapp.InfoWeb.csproj|solutionrelative:sihapp.infoweb\\views\\home\\prices.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDE74BFD-F339-44F6-A123-57D2017B3B31}|Sihapp.InfoWeb\\Sihapp.InfoWeb.csproj|C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\sihapp.infoweb\\views\\home\\sihappcrew.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDE74BFD-F339-44F6-A123-57D2017B3B31}|Sihapp.InfoWeb\\Sihapp.InfoWeb.csproj|solutionrelative:sihapp.infoweb\\views\\home\\sihappcrew.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDE74BFD-F339-44F6-A123-57D2017B3B31}|Sihapp.InfoWeb\\Sihapp.InfoWeb.csproj|C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\sihapp.infoweb\\controllers\\managecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDE74BFD-F339-44F6-A123-57D2017B3B31}|Sihapp.InfoWeb\\Sihapp.InfoWeb.csproj|solutionrelative:sihapp.infoweb\\controllers\\managecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\sihapp.webproject\\backend\\services\\consultservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|solutionrelative:sihapp.webproject\\backend\\services\\consultservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\sihapp.webproject\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|solutionrelative:sihapp.webproject\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\sihapp.webproject\\backend\\services\\appointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|solutionrelative:sihapp.webproject\\backend\\services\\appointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\sihapp.webproject\\models\\users\\pageableusersvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|solutionrelative:sihapp.webproject\\models\\users\\pageableusersvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\sihapp.webproject\\backend\\services\\customfieldsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|solutionrelative:sihapp.webproject\\backend\\services\\customfieldsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\sihapp.webproject\\controllers\\consultcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|solutionrelative:sihapp.webproject\\controllers\\consultcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\sihapp.webproject\\controllers\\clinicmencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|solutionrelative:sihapp.webproject\\controllers\\clinicmencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\sihapp.webproject\\backend\\services\\clinicmenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|solutionrelative:sihapp.webproject\\backend\\services\\clinicmenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rolan\\OneDrive\\Escritorio\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\AppointmentSC.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rolan\\OneDrive\\Escritorio\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\BasicService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rolan\\OneDrive\\Escritorio\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\RemissionNotesSC.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rolan\\OneDrive\\Escritorio\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\ManagerSC.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rolan\\OneDrive\\Escritorio\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\PatientSC.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rolan\\OneDrive\\Escritorio\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\CustomFieldsSC.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rolan\\OneDrive\\Escritorio\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\ConsultSC.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rolan\\OneDrive\\Escritorio\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\ClinicMenSC.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rolan\\OneDrive\\Escritorio\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\AuxiliarPersonalSC.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rolan\\OneDrive\\Escritorio\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\AccountSC.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rolan\\OneDrive\\Escritorio\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\UtilSC.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rolan\\OneDrive\\Escritorio\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\PdfDocumentsSC.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{891EA1B0-C834-4F0B-A7B5-EF75B3C97EDE}|Sihapp.WebProject\\Sihapp.WebProject.csproj|c:\\users\\rolan\\onedrive\\escritorio\\github\\sihapp.public\\sihapp.web.app\\sihapp.webproject\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TermsAndConditions.cshtml",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Views\\Account\\TermsAndConditions.cshtml",
+              "RelativeDocumentMoniker": "Sihapp.WebProject\\Views\\Account\\TermsAndConditions.cshtml",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Views\\Account\\TermsAndConditions.cshtml",
+              "RelativeToolTip": "Sihapp.WebProject\\Views\\Account\\TermsAndConditions.cshtml",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAwwE4AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-12T18:03:55.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SihappCrew.cshtml",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Views\\Account\\SihappCrew.cshtml",
+              "RelativeDocumentMoniker": "Sihapp.WebProject\\Views\\Account\\SihappCrew.cshtml",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Views\\Account\\SihappCrew.cshtml",
+              "RelativeToolTip": "Sihapp.WebProject\\Views\\Account\\SihappCrew.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-12T18:03:33.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PatientsListCtrl.js",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\obj\\Debug\\Package\\PackageTmp\\Scripts\\Controllers\\Patients\\PatientsListCtrl.js",
+              "RelativeDocumentMoniker": "Sihapp.WebProject\\obj\\Debug\\Package\\PackageTmp\\Scripts\\Controllers\\Patients\\PatientsListCtrl.js",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\obj\\Debug\\Package\\PackageTmp\\Scripts\\Controllers\\Patients\\PatientsListCtrl.js",
+              "RelativeToolTip": "Sihapp.WebProject\\obj\\Debug\\Package\\PackageTmp\\Scripts\\Controllers\\Patients\\PatientsListCtrl.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-07-12T02:36:55.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PatientsListCtrl.ts",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Scripts\\Controllers\\Patients\\PatientsListCtrl.ts",
+              "RelativeDocumentMoniker": "Sihapp.WebProject\\Scripts\\Controllers\\Patients\\PatientsListCtrl.ts",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Scripts\\Controllers\\Patients\\PatientsListCtrl.ts",
+              "RelativeToolTip": "Sihapp.WebProject\\Scripts\\Controllers\\Patients\\PatientsListCtrl.ts",
+              "ViewState": "AgIAAMEAAAAAAAAAAAAAAMwAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-07-12T02:05:48.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.AdminV1\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "Sihapp.AdminV1\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.AdminV1\\UnitTest1.cs",
+              "RelativeToolTip": "Sihapp.AdminV1\\UnitTest1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T22:32:56.782Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Web.config",
+              "RelativeDocumentMoniker": "Sihapp.WebProject\\Web.config",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Web.config",
+              "RelativeToolTip": "Sihapp.WebProject\\Web.config",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAowDEAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-07-11T20:22:28.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RemissionNotesService.cs",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\Services\\RemissionNotesService.cs",
+              "RelativeDocumentMoniker": "Sihapp.WebProject\\Backend\\Services\\RemissionNotesService.cs",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\Services\\RemissionNotesService.cs",
+              "RelativeToolTip": "Sihapp.WebProject\\Backend\\Services\\RemissionNotesService.cs",
+              "ViewState": "AgIAAIQAAAAAAAAAAAA4wI4AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T22:26:55.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Sihapp.WebProject",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Sihapp.WebProject.csproj",
+              "RelativeDocumentMoniker": "Sihapp.WebProject\\Sihapp.WebProject.csproj",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Sihapp.WebProject.csproj",
+              "RelativeToolTip": "Sihapp.WebProject\\Sihapp.WebProject.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-07-11T23:37:23.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SihappModelEntities.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\DataAccess\\SihappModelEntities.Designer.cs",
+              "RelativeDocumentMoniker": "Sihapp.WebProject\\Backend\\DataAccess\\SihappModelEntities.Designer.cs",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\DataAccess\\SihappModelEntities.Designer.cs",
+              "RelativeToolTip": "Sihapp.WebProject\\Backend\\DataAccess\\SihappModelEntities.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-12T18:04:40.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PatientService.cs",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\Services\\PatientService.cs",
+              "RelativeDocumentMoniker": "Sihapp.WebProject\\Backend\\Services\\PatientService.cs",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\Services\\PatientService.cs",
+              "RelativeToolTip": "Sihapp.WebProject\\Backend\\Services\\PatientService.cs",
+              "ViewState": "AgIAAN4AAAAAAAAAAAAcwOcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T22:21:18.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AccountService.cs",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\Services\\AccountService.cs",
+              "RelativeDocumentMoniker": "Sihapp.WebProject\\Backend\\Services\\AccountService.cs",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\Services\\AccountService.cs",
+              "RelativeToolTip": "Sihapp.WebProject\\Backend\\Services\\AccountService.cs",
+              "ViewState": "AgIAAKIAAAAAAAAAAAAmwKwAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T22:17:10.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PatientsList.cshtml",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Views\\Patients\\PatientsList.cshtml",
+              "RelativeDocumentMoniker": "Sihapp.WebProject\\Views\\Patients\\PatientsList.cshtml",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Views\\Patients\\PatientsList.cshtml",
+              "RelativeToolTip": "Sihapp.WebProject\\Views\\Patients\\PatientsList.cshtml",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAnwFQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-12T02:09:17.408Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AppointmentListCtrl.js",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\obj\\Debug\\Package\\PackageTmp\\Scripts\\Controllers\\Appointments\\AppointmentListCtrl.js",
+              "RelativeDocumentMoniker": "Sihapp.WebProject\\obj\\Debug\\Package\\PackageTmp\\Scripts\\Controllers\\Appointments\\AppointmentListCtrl.js",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\obj\\Debug\\Package\\PackageTmp\\Scripts\\Controllers\\Appointments\\AppointmentListCtrl.js",
+              "RelativeToolTip": "Sihapp.WebProject\\obj\\Debug\\Package\\PackageTmp\\Scripts\\Controllers\\Appointments\\AppointmentListCtrl.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-07-12T02:36:48.371Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AppointmentListCtrl.js.map",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\obj\\Debug\\Package\\PackageTmp\\Scripts\\Controllers\\Appointments\\AppointmentListCtrl.js.map",
+              "RelativeDocumentMoniker": "Sihapp.WebProject\\obj\\Debug\\Package\\PackageTmp\\Scripts\\Controllers\\Appointments\\AppointmentListCtrl.js.map",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\obj\\Debug\\Package\\PackageTmp\\Scripts\\Controllers\\Appointments\\AppointmentListCtrl.js.map",
+              "RelativeToolTip": "Sihapp.WebProject\\obj\\Debug\\Package\\PackageTmp\\Scripts\\Controllers\\Appointments\\AppointmentListCtrl.js.map",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-07-12T02:36:50.803Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "JsonNetResult.cs",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\Services\\JsonNetResult.cs",
+              "RelativeDocumentMoniker": "Sihapp.WebProject\\Backend\\Services\\JsonNetResult.cs",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\Services\\JsonNetResult.cs",
+              "RelativeToolTip": "Sihapp.WebProject\\Backend\\Services\\JsonNetResult.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T22:22:21.406Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Sihapp.WebProject\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Sihapp.WebProject\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAawFQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T21:44:07.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "PatientsController.cs",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Controllers\\PatientsController.cs",
+              "RelativeDocumentMoniker": "Sihapp.WebProject\\Controllers\\PatientsController.cs",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Controllers\\PatientsController.cs",
+              "RelativeToolTip": "Sihapp.WebProject\\Controllers\\PatientsController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAUwCkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T20:26:19.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.AdminV1\\packages.config",
+              "RelativeDocumentMoniker": "Sihapp.AdminV1\\packages.config",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.AdminV1\\packages.config",
+              "RelativeToolTip": "Sihapp.AdminV1\\packages.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-07-11T23:05:24.564Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Web.Release.config",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Web.Release.config",
+              "RelativeDocumentMoniker": "Sihapp.WebProject\\Web.Release.config",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Web.Release.config",
+              "RelativeToolTip": "Sihapp.WebProject\\Web.Release.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-07-12T01:35:26.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Web.Debug.config",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Web.Debug.config",
+              "RelativeDocumentMoniker": "Sihapp.WebProject\\Web.Debug.config",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Web.Debug.config",
+              "RelativeToolTip": "Sihapp.WebProject\\Web.Debug.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-07-12T01:35:31.536Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "EntitiesModel.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.AdminV1\\EntitiesModel.edmx",
+              "RelativeDocumentMoniker": "Sihapp.AdminV1\\EntitiesModel.edmx",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.AdminV1\\EntitiesModel.edmx [Diagram1]",
+              "RelativeToolTip": "Sihapp.AdminV1\\EntitiesModel.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2025-07-11T23:05:29.061Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Startup.cs",
+              "RelativeDocumentMoniker": "Sihapp.WebProject\\Startup.cs",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Startup.cs",
+              "RelativeToolTip": "Sihapp.WebProject\\Startup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-12T01:07:57.215Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "App.Config",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.AdminV1\\App.Config",
+              "RelativeDocumentMoniker": "Sihapp.AdminV1\\App.Config",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.AdminV1\\App.Config",
+              "RelativeToolTip": "Sihapp.AdminV1\\App.Config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABbAQAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-07-11T23:05:36.377Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SihappModelEntities.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\DataAccess\\SihappModelEntities.edmx",
+              "RelativeDocumentMoniker": "Sihapp.WebProject\\Backend\\DataAccess\\SihappModelEntities.edmx",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\DataAccess\\SihappModelEntities.edmx [Diagram1]",
+              "RelativeToolTip": "Sihapp.WebProject\\Backend\\DataAccess\\SihappModelEntities.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2025-07-12T01:02:11.291Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Sihapp.WebProject\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "Sihapp.WebProject\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAMYAAAAAAAAAAAAAAMoAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-11T23:09:33.465Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\README.md",
+              "RelativeDocumentMoniker": "..\\README.md",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\README.md",
+              "RelativeToolTip": "..\\README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-07-11T23:33:48.741Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ManagerService.cs",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\Services\\ManagerService.cs",
+              "RelativeDocumentMoniker": "Sihapp.WebProject\\Backend\\Services\\ManagerService.cs",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\Services\\ManagerService.cs",
+              "RelativeToolTip": "Sihapp.WebProject\\Backend\\Services\\ManagerService.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAArwBUAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T22:23:22.153Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "ConsultService.cs",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\Services\\ConsultService.cs",
+              "RelativeDocumentMoniker": "Sihapp.WebProject\\Backend\\Services\\ConsultService.cs",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\Services\\ConsultService.cs",
+              "RelativeToolTip": "Sihapp.WebProject\\Backend\\Services\\ConsultService.cs",
+              "ViewState": "AgIAAIYAAAAAAAAAAADgv5YAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T22:27:25.032Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "SihappManagementController.cs",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Controllers\\SihappManagementController.cs",
+              "RelativeDocumentMoniker": "Sihapp.WebProject\\Controllers\\SihappManagementController.cs",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Controllers\\SihappManagementController.cs",
+              "RelativeToolTip": "Sihapp.WebProject\\Controllers\\SihappManagementController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAcwBAAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T22:23:49.862Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ExceptionHandler.cs",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ExceptionHandler.cs",
+              "RelativeDocumentMoniker": "Sihapp.WebProject\\Backend\\ExceptionHandler.cs",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ExceptionHandler.cs",
+              "RelativeToolTip": "Sihapp.WebProject\\Backend\\ExceptionHandler.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAAA8AAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T22:42:56.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Utils.ts",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Scripts\\Controllers\\Utils\\Utils.ts",
+              "RelativeDocumentMoniker": "Sihapp.WebProject\\Scripts\\Controllers\\Utils\\Utils.ts",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Scripts\\Controllers\\Utils\\Utils.ts",
+              "RelativeToolTip": "Sihapp.WebProject\\Scripts\\Controllers\\Utils\\Utils.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-07-11T22:53:44.053Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Sihapp.WebProject\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Sihapp.WebProject\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAjwFsAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-11T22:59:49.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ManageController.cs",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Controllers\\ManageController.cs",
+              "RelativeDocumentMoniker": "Sihapp.WebProject\\Controllers\\ManageController.cs",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Controllers\\ManageController.cs",
+              "RelativeToolTip": "Sihapp.WebProject\\Controllers\\ManageController.cs",
+              "ViewState": "AgIAAOwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T22:58:36.296Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ServiceError.cs",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceError.cs",
+              "RelativeDocumentMoniker": "Sihapp.WebProject\\Backend\\ServiceError.cs",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceError.cs",
+              "RelativeToolTip": "Sihapp.WebProject\\Backend\\ServiceError.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T22:47:16.012Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "UtilService.cs",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\Services\\UtilService.cs",
+              "RelativeDocumentMoniker": "Sihapp.WebProject\\Backend\\Services\\UtilService.cs",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\Services\\UtilService.cs",
+              "RelativeToolTip": "Sihapp.WebProject\\Backend\\Services\\UtilService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAABEAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T22:51:55.539Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "PdfDocumentsService.cs",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\Services\\PdfDocumentsService.cs",
+              "RelativeDocumentMoniker": "Sihapp.WebProject\\Backend\\Services\\PdfDocumentsService.cs",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\Services\\PdfDocumentsService.cs",
+              "RelativeToolTip": "Sihapp.WebProject\\Backend\\Services\\PdfDocumentsService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAASwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T22:26:45.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "ManageController.cs",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.InfoWeb\\Controllers\\ManageController.cs",
+              "RelativeDocumentMoniker": "Sihapp.InfoWeb\\Controllers\\ManageController.cs",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.InfoWeb\\Controllers\\ManageController.cs",
+              "RelativeToolTip": "Sihapp.InfoWeb\\Controllers\\ManageController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T22:34:11.902Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "SihappCrew.cshtml",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.InfoWeb\\Views\\Home\\SihappCrew.cshtml",
+              "RelativeDocumentMoniker": "Sihapp.InfoWeb\\Views\\Home\\SihappCrew.cshtml",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.InfoWeb\\Views\\Home\\SihappCrew.cshtml",
+              "RelativeToolTip": "Sihapp.InfoWeb\\Views\\Home\\SihappCrew.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-11T22:37:05.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Project_Readme.html",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.InfoWeb\\Project_Readme.html",
+              "RelativeDocumentMoniker": "Sihapp.InfoWeb\\Project_Readme.html",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.InfoWeb\\Project_Readme.html",
+              "RelativeToolTip": "Sihapp.InfoWeb\\Project_Readme.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-07-11T22:40:50.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Prices.cshtml",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.InfoWeb\\Views\\Home\\Prices.cshtml",
+              "RelativeDocumentMoniker": "Sihapp.InfoWeb\\Views\\Home\\Prices.cshtml",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.InfoWeb\\Views\\Home\\Prices.cshtml",
+              "RelativeToolTip": "Sihapp.InfoWeb\\Views\\Home\\Prices.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-11T22:38:47.112Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.InfoWeb\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Sihapp.InfoWeb\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.InfoWeb\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Sihapp.InfoWeb\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-11T22:38:49.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.InfoWeb\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "Sihapp.InfoWeb\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.InfoWeb\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "Sihapp.InfoWeb\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AgIAADgAAAAAAAAAAAAAAEgAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-11T22:38:50.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "CustomFieldsService.cs",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\Services\\CustomFieldsService.cs",
+              "RelativeDocumentMoniker": "Sihapp.WebProject\\Backend\\Services\\CustomFieldsService.cs",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\Services\\CustomFieldsService.cs",
+              "RelativeToolTip": "Sihapp.WebProject\\Backend\\Services\\CustomFieldsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T22:20:46.324Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Sihapp.WebProject\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Sihapp.WebProject\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAASwBUAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T21:43:46.508Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "PageableUsersVM.cs",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Models\\Users\\PageableUsersVM.cs",
+              "RelativeDocumentMoniker": "Sihapp.WebProject\\Models\\Users\\PageableUsersVM.cs",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Models\\Users\\PageableUsersVM.cs",
+              "RelativeToolTip": "Sihapp.WebProject\\Models\\Users\\PageableUsersVM.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAjwFwAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T22:26:19.122Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "AppointmentService.cs",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\Services\\AppointmentService.cs",
+              "RelativeDocumentMoniker": "Sihapp.WebProject\\Backend\\Services\\AppointmentService.cs",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\Services\\AppointmentService.cs",
+              "RelativeToolTip": "Sihapp.WebProject\\Backend\\Services\\AppointmentService.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAArwBsAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T22:17:26.472Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "RemissionNotesSC.cs",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\RemissionNotesSC.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\RemissionNotesSC.cs",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\RemissionNotesSC.cs",
+              "RelativeToolTip": "..\\..\\..\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\RemissionNotesSC.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T21:53:30.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "ManagerSC.cs",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\ManagerSC.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\ManagerSC.cs",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\ManagerSC.cs",
+              "RelativeToolTip": "..\\..\\..\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\ManagerSC.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T21:53:24.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "PatientSC.cs",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\PatientSC.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\PatientSC.cs",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\PatientSC.cs",
+              "RelativeToolTip": "..\\..\\..\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\PatientSC.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T21:52:54.062Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "CustomFieldsSC.cs",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\CustomFieldsSC.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\CustomFieldsSC.cs",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\CustomFieldsSC.cs",
+              "RelativeToolTip": "..\\..\\..\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\CustomFieldsSC.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T21:52:47.679Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "ConsultSC.cs",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\ConsultSC.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\ConsultSC.cs",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\ConsultSC.cs",
+              "RelativeToolTip": "..\\..\\..\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\ConsultSC.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T21:52:35.852Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "ClinicMenController.cs",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Controllers\\ClinicMenController.cs",
+              "RelativeDocumentMoniker": "Sihapp.WebProject\\Controllers\\ClinicMenController.cs",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Controllers\\ClinicMenController.cs",
+              "RelativeToolTip": "Sihapp.WebProject\\Controllers\\ClinicMenController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAArwB8AAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T22:17:29.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "ConsultController.cs",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Controllers\\ConsultController.cs",
+              "RelativeDocumentMoniker": "Sihapp.WebProject\\Controllers\\ConsultController.cs",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Controllers\\ConsultController.cs",
+              "RelativeToolTip": "Sihapp.WebProject\\Controllers\\ConsultController.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAArwGsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T21:46:34.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "ClinicMenService.cs",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\Services\\ClinicMenService.cs",
+              "RelativeDocumentMoniker": "Sihapp.WebProject\\Backend\\Services\\ClinicMenService.cs",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp.public\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\Services\\ClinicMenService.cs",
+              "RelativeToolTip": "Sihapp.WebProject\\Backend\\Services\\ClinicMenService.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACkAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T22:18:04.012Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "BasicService.cs",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\BasicService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\BasicService.cs",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\BasicService.cs",
+              "RelativeToolTip": "..\\..\\..\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\BasicService.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T21:56:35.916Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "ClinicMenSC.cs",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\ClinicMenSC.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\ClinicMenSC.cs",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\ClinicMenSC.cs",
+              "RelativeToolTip": "..\\..\\..\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\ClinicMenSC.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T21:52:28.812Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "AuxiliarPersonalSC.cs",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\AuxiliarPersonalSC.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\AuxiliarPersonalSC.cs",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\AuxiliarPersonalSC.cs",
+              "RelativeToolTip": "..\\..\\..\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\AuxiliarPersonalSC.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T21:52:20.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "AppointmentSC.cs",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\AppointmentSC.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\AppointmentSC.cs",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\AppointmentSC.cs",
+              "RelativeToolTip": "..\\..\\..\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\AppointmentSC.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T21:52:13.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "AccountSC.cs",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\AccountSC.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\AccountSC.cs",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\AccountSC.cs",
+              "RelativeToolTip": "..\\..\\..\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\AccountSC.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T21:50:55.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "UtilSC.cs",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\UtilSC.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\UtilSC.cs",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\UtilSC.cs",
+              "RelativeToolTip": "..\\..\\..\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\UtilSC.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T21:46:59.185Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "PdfDocumentsSC.cs",
+              "DocumentMoniker": "C:\\Users\\rolan\\OneDrive\\Escritorio\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\PdfDocumentsSC.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\PdfDocumentsSC.cs",
+              "ToolTip": "C:\\Users\\rolan\\OneDrive\\Escritorio\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\PdfDocumentsSC.cs",
+              "RelativeToolTip": "..\\..\\..\\SIHAPP LAST PROD CODE\\Sihapp.Web.App\\Sihapp.WebProject\\Backend\\ServiceComponents\\PdfDocumentsSC.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T21:34:49.214Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

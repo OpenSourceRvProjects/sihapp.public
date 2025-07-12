@@ -1,0 +1,184 @@
+﻿
+@{
+    ViewBag.Title = "Nota de consulta";
+}
+
+<script src="~/Scripts/Controllers/Patients/PatientRemissionDetailsCtrl.js"></script>
+
+<span ng-init="backendData = @ViewBag.backendData"></span>
+<div ng-controller="patientRemissionCtrl">
+
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h3 style="color:#1F4F7B; text-align:center"><i class="fa fa-file"></i> Nota # {{backendData.RemissionNumber}}</h3>
+
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="panel-body">
+
+                <div ng-if="!showPaymentsPanel">
+                    <div class="row">
+
+                        <div class="col-sm-6">
+                            <h5 class="pull-left">Paciente: {{backendData.PatientName}}</h5>
+
+                        </div>
+                        <div class="col-sm-6">
+                            <h5 class="pull-right">Profesional de salud: {{backendData.ClinicManName}}</h5>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-4" style="text-align:center; color: darkorange">
+                            <h5>Pendiente: {{backendData.Pending | currency}}</h5>
+                        </div>
+
+                        <div class="col-sm-4" style="text-align:center; color:darkgreen">
+                            <h5> <strong>Total: {{backendData.GrandTotal | currency}}</strong></h5>
+                        </div>
+
+                        <div class="col-sm-4" style="text-align:center; color: darkblue">
+                            <h5>Pagado: {{backendData.Payed | currency}}</h5>
+                            <br />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12" style="text-align:center">
+                            <h5>{{backendData.Notes}}</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div ng-show="showPaymentsPanel">
+
+                    <table class="table nav-stacked">
+                        <tr style="background-color:bisque">
+                            <td>Fecha</td>
+                            <td>Notas</td>
+                            <td>Monto de pago</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr ng-repeat="pi in paymentItems.PaymentItems track by $index">
+                            <td>{{pi.ApplicationDate}}</td>
+                            <td>{{pi.Notes}}</td>
+                            <td>{{pi.PaymentAmount | currency}}</td>
+                            <td><a class="btn btn-warning" ng-href="@Url.Action("PDFPaymentReceipt", "Patients")?id={{pi.PaymentID}}"> <i class="fa fa-file-pdf-o"></i></a></td>
+                            <td><a href="#" ng-click="showDeletePopup(pi)"><i class="fa fa-eraser"></i> Borrar</a></td>
+
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>{{paymentItems.TotalPayed | currency}}</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr ng-show="totalPages > 0">
+                            <td>Pag {{currentPage + 1 }}  de {{totalPages}}</td>
+                            <td colspan="6" align="right">
+                                <a href="#" ng-click="first()" class="btn btn-primary btn-sm" ng-show="currentPage > 0"> Primera <i class="fa fa-arrow-left"></i>  </a>
+                                <a href="#" ng-click="prev()" class="btn btn-primary btn-sm" ng-show="currentPage > 0">Anterior</a>
+                                <span ng-repeat="l in  pageLinks()" ng-show="(currentPage+1) < totalPages">
+                                    <a href="#" ng-click="goToPage(l)" class="btn btn-warning btn-sm">    {{l + 1}}</a>
+                                </span>
+                                <a href="#" ng-click="next()" class="btn btn-primary btn-sm" ng-show="(currentPage + 1)  < totalPages">Siguiente</a>
+
+                                <a href="#" ng-click="last()" class="btn btn-primary btn-sm" ng-show="(currentPage + 1)  < totalPages"> Último <i class="fa fa-arrow-right"></i> </a>
+
+
+                            </td>
+                            <td></td>
+                        </tr>
+
+
+                    </table>
+
+                </div>
+
+            </div>
+            <div class="panel-footer">
+                <div ng-show="!showPaymentsPanel" class="row">
+                    <div class="col-sm-8"></div>
+                    <div class="col-sm-4 pull-right">
+                        <div class="col-sm-6">
+                            <button type="button" class="btn btn-success pull-right" ng-click="search()"><i class="fa fa-dollar"></i> Ver pagos</button>
+                            <br />
+                        </div>
+                        <div class="col-sm-6 pull-right">
+                            <a class="btn btn-warning pull-right" ng-href="@Url.Action("PDFNotes", "Patients")?id={{backendData.RemissionID}}"> Imprimir nota <i class="fa fa-print"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div ng-show="showPaymentsPanel" class="row">
+                    <div class="col-sm-8"></div>
+                    <div class="col-sm-4 pull-right">
+                        <div class="col-sm-6">
+                            <button type="button" class="btn btn-success pull-right" ng-click="goBack()"><i class="fa fa-file-code-o"></i> Nota </button>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+    <div id="deletePaymentModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" style="width:400px;">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <div class="row">
+                        <div class="col-sm-12" style="top:20px">
+                            <h4 class="modal-title" style="padding-left:45px">
+                                <i class="fa fa-dollar"></i>
+                                Borrar pago de {{backendData.PatientName}}
+                            </h4>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="panel-body">
+                        <strong>Monto de pago:  {{selectedPayment.PaymentAmount | currency}}</strong>
+                        <br />
+                        ¿Esta seguro de querer borrar pago? Una vez borrado no hay forma de recuperarlo 
+                        <br />
+                        <br />
+                        <span style="color:red" ng-show="responseMessage.length > 0">{{responseMessage}}</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-success" ng-click="delete()">Borrar</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>

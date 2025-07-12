@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="SihappDB-Web.config Connection String" description="SihappDB Connection String used in web.config by the application to access the database." defaultValue="Server=db23307.public.databaseasp.net,1433;Database=db23307;User ID=db23307;Password=5w_QqD2!M9+c;Trusted_Connection=False;Encrypt=False;Connection Timeout=30;Enlist=False;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp\.public\\Sihapp\.Web\.App\\Sihapp\.WebProject\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='SihappDB']/@connectionString" />
+  </parameter>
+  <parameter name="SihappDBEntities-Web.config Connection String" description="SihappDBEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Backend.DataAccess.SihappModelEntities.csdl|res://*/Backend.DataAccess.SihappModelEntities.ssdl|res://*/Backend.DataAccess.SihappModelEntities.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=db23307.public.databaseasp.net;initial catalog=db23307;persist security info=True;Encrypt=False;user id=db23307;password=5w_QqD2!M9+c;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp\.public\\Sihapp\.Web\.App\\Sihapp\.WebProject\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='SihappDBEntities']/@connectionString" />
+  </parameter>
+  <parameter name="Sihapp.WebProject.Backend.DataAccess.EntitiesRestore-Web.config Connection String" description="Sihapp.WebProject.Backend.DataAccess.EntitiesRestore Connection String used in web.config by the application to access the database." defaultValue="Sihapp.WebProject.Backend.DataAccess.EntitiesRestore_ConnectionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\rolan\\OneDrive\\Escritorio\\Github\\sihapp\.public\\Sihapp\.Web\.App\\Sihapp\.WebProject\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Sihapp.WebProject.Backend.DataAccess.EntitiesRestore']/@connectionString" />
+  </parameter>
+</parameters>

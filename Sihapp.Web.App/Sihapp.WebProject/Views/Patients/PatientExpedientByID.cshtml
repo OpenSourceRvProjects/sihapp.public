@@ -1,0 +1,79 @@
+﻿
+@{
+    ViewBag.Title = "Expediente";
+}
+
+<script src="~/Scripts/angular-file-upload.js"></script>
+<script src="~/Scripts/Controllers/Patients/PatientExpedientCtrl.js"></script>
+
+<span ng-init="model = @Html.ViewBag.backendData"></span>
+<div ng-controller="patientExpedientCtrl">
+
+    @*<h1 style="color:darkorange; text-align:center"><i class="fa fa-code"></i> Página de expediente en construcción <i class="fa fa-coffee"></i></h1>*@
+
+    <h4 style="font-weight:bold">Paciente {{model.Name}} {{model.LastName1}}</h4>
+    <h5>( # Paciente {{model.Number}})</h5>
+
+
+
+    @*<ul class="nav nav-pills">
+        <li class="active"><a data-toggle="pill" href="#info">Datos generales</a></li>
+        <li><a data-toggle="pill" href="#consults" ng-click="searchAppointments()">Consultas</a></li>
+    </ul>*@
+
+    <a class="btn btn-info" style="margin-top:20px" ng-href="@Url.Action("PDF", "Patients")?id={{model.ID}}"> Imprimir expediente <i class="fa fa-print"></i></a>
+
+    <div class="tab-content">
+        <div id="info" class="tab-pane fade in active">
+          
+            <br />
+            <br />
+
+            <div class="row">
+                <div class="col-xs-6 form-group">
+                    <label>Nombre(s)</label>
+                    <input ng-model="model.Name" ng-if="editMode" class="form-control" type="text" placeholder="Minutos" />
+                    <h2 ng-show="!editMode">{{model.Name}}</h2>
+
+                </div>
+                <div class="col-xs-6 form-group">
+                    <label style="color:green">Apellido Paterno</label>
+                    <input ng-model="model.LastName1" ng-if="editMode" class="form-control" type="text" />
+                    <h2 ng-show="!editMode">{{model.LastName1}}  .</h2>
+                </div>
+
+                <div class="col-xs-6 form-group">
+                    <label style="color:green">Apellido Materno</label>
+                    <input ng-model="model.LastName2" ng-if="editMode" class="form-control" type="text" />
+                    <h2 ng-show="!editMode">{{model.LastName2}}  .</h2>
+                </div>
+
+                <div class="col-xs-6 form-group">
+                    <label style="color:green">Fecha de nacimiento</label>
+                    <input ng-model="model.Birthdate" ng-if="editMode" class="form-control" type="date" placeholder="Fecha de nacimiento" />
+                    <h2 ng-show="!editMode">{{model.Birthdate | date}}</h2>
+
+                </div>
+                <div class="col-xs-6 form-group">
+                    <label style="color:green">Celular</label>
+                    <input ng-model="model.Cellphone" ng-if="editMode" class="form-control" type="text" />
+                    <h3 ng-show="!editMode">{{model.Phone}}</h3>
+                </div>
+
+                <div class="col-xs-6 form-group">
+                    <label style="color:green">Consultas realizadas</label>
+                    <h3 ng-show="!editMode">{{model.GeneralConsultQty}}</h3>
+                </div>
+
+            </div>
+
+            @*<button ng-if="!editMode" type="button" class="btn btn-info" ng-click="onEditMode()"><i class="fa fa-pencil"></i> Editar</button>
+            <button ng-if="editMode" type="button" class="btn btn-warning" ng-click="offEditMode()"><i class="fa fa-ban"></i> Cancelar</button>
+            <button ng-if="editMode" type="button" class="btn btn-primary" ng-click="updateSettings()"><i class="fa fa-refresh"></i> Actualizar</button>*@
+
+
+
+        </div>
+        
+    </div>
+</div>

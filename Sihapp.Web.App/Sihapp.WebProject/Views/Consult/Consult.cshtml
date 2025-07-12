@@ -1,0 +1,158 @@
+﻿
+@{
+    ViewBag.Title = "Consulta";
+}
+
+<script src="~/Scripts/angular-file-upload.js"></script>
+<script src="~/Scripts/Controllers/Consult/ConsultCtrl.js"></script>
+
+<span ng-init="model = @Html.ViewBag.backendData"></span>
+<div ng-controller="consultCtrl">
+
+    <h4 style="font-weight:bold">Consulta en curso # {{model.Number}}</h4>
+    <h5>(Cita # {{model.AppointmentNumber}})</h5>
+
+
+
+    <ul class="nav nav-pills">
+        <li class="active"><a data-toggle="pill" href="#consult">Consulta</a></li>
+        <li><a data-toggle="pill" href="#images" ng-click="getConsultImages()">Imagenes</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="consult" class="tab-pane fade in active">
+            <br />
+            <br />
+
+            <div class="row">
+                <div class="col-sm-6" style="font-weight:bold; color:darkblue">
+                    Paciente: {{model.PatientName}}
+                    <br />
+                    Fecha de nacimiento : {{model.PatientBirthDate | date}}
+                </div>
+
+                <div class="col-sm-6" style="font-weight:bold">
+                    Consulta a cargo de: {{model.ClinicMenName}}
+                </div>
+
+                <br />
+                <br />
+
+
+
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+
+                    <h4>Notas de consulta</h4>
+                    <button ng-show="!model.IsFinished" style="text-align:right" type="button" class="btn btn-primary" ng-click="saveNotes()"> <i class="fa fa-save"></i> Guardar notas</button>
+                    <br />
+                    <br />
+                    <textarea ng-disabled="model.IsFinished" cols="4" rows="10" class="form-control" style="min-width: 100%" ng-model="model.Notes"></textarea>
+
+
+                </div>
+
+                <div  class="col-sm-6" ng-show="!model.IsFinished && !cannotUpload">
+
+                    <br />
+                    <div ng-repeat="item in uploader.queue">
+
+
+                        <div nowrap>
+                            <button type="button" class="btn btn-success btn-xs" ng-click="item.upload()" ng-show="!(item.isReady || item.isUploading || item.isSuccess)" @*ng-disabled="item.isReady || item.isUploading || item.isSuccess"*@>
+                                <span class="glyphicon glyphicon-upload"></span> Guardar imagen
+                            </button>
+                            <h3 style="color:red">{{statusMsg}}</h3>
+
+                        </div>
+                    </div>
+
+                    <input ng-show="!consultImg" type="file" nv-file-select="" uploader="uploader" />
+
+                    <div ng-show="consultImg">
+
+                        <img style="width:200px" ng-src="data:image/JPEG;base64,{{consultImg}}">
+                        <h4 style="color:green"><i class="fa fa-check"></i>Imágen guardada con éxito.</h4>
+
+                        <button type="button" class="btn btn-success btn-xs" ng-click="resetImageUploader()">
+                            <i class="fa fa-refresh"></i> Deseo subir otra imagen
+                        </button>
+                    </div>
+
+                </div>
+
+                <div ng-show="cannotUpload" class="col-sm-6">
+                    <h5 style="color:red"><i class="fa fa-ban"></i> La version Beta no permite subir más imagenes. Si deseas subir más, favor de enviar un correo a sihapp.web@gmail.com</h5>
+
+                   
+                </div>
+            </div>
+            <br />
+            <br />
+            <button ng-show="!model.IsFinished" type="button" class="btn btn-success" ng-click="showCloseConfirmModal()">Terminar consulta</button>
+            <div id="closeConfirmation" class="modal fade" role="dialog">
+                <div class="modal-dialog" style="width:380px;">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <div class="row">
+                                <div class="col-sm-12" style="top:20px">
+                                    <h4 class="modal-title" style="padding-left:45px">
+                                        <i class="fa fa-check"></i>
+                                        Cerrar consulta
+                                    </h4>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <div class="panel-body">
+
+
+                                <div>
+
+                                    <form>
+                                        <h5>¿Estás seguro de cerrar la consulta?, por el momento el sistema no permite re abrir la cita, si gustas puedes pausarla</h5>
+
+                                        <h4>Monto de consulta:</h4>
+                                        <input type="text" class="input-sm" ng-model="cost" /> MXN
+                                        <br />
+                                        <br />
+
+                                        <span ng-show="errorMsg.length > 0" style="color:red">{{errorMsg}}</span>
+
+                                    </form>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">No, Cerrar</button>
+                            <button type="button" class="btn btn-success" ng-click="closeConsult()">Si, Terminar</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="images" class="tab-pane fade">
+            <br />
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <div ng-repeat="i in consultImages track by $index">
+                        <div ng-class="{'clearfix': $index%3 === 0}"></div>
+                        <div class="col-sm-4">
+                            <img style="width:200px; padding-top: 20px" ng-src="data:image/JPEG;base64,{{i.Image}}">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

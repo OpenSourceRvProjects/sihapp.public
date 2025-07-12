@@ -1,0 +1,837 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SihappDBModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="SihappDBEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(SihappDBModel1.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(SihappDBModel1.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+    <EntitySet Name="C__MigrationHistory" EntityType="SihappDBModel1.C__MigrationHistory" />
+    <EntitySet Name="Appointment" EntityType="SihappDBModel1.Appointment" />
+    <EntitySet Name="AspNetRoles" EntityType="SihappDBModel1.AspNetRoles" />
+    <EntitySet Name="AspNetUserClaims" EntityType="SihappDBModel1.AspNetUserClaims" />
+    <EntitySet Name="AspNetUserLogins" EntityType="SihappDBModel1.AspNetUserLogins" />
+    <EntitySet Name="AspNetUsers" EntityType="SihappDBModel1.AspNetUsers" />
+    <EntitySet Name="AuxiliarPersonal" EntityType="SihappDBModel1.AuxiliarPersonal" />
+    <EntitySet Name="Clinic" EntityType="SihappDBModel1.Clinic" />
+    <EntitySet Name="ClinicMen" EntityType="SihappDBModel1.ClinicMen" />
+    <EntitySet Name="Consult" EntityType="SihappDBModel1.Consult" />
+    <EntitySet Name="ConsultImages" EntityType="SihappDBModel1.ConsultImages" />
+    <EntitySet Name="CustomFields" EntityType="SihappDBModel1.CustomFields" />
+    <EntitySet Name="CustomFieldValues" EntityType="SihappDBModel1.CustomFieldValues" />
+    <EntitySet Name="Logs" EntityType="SihappDBModel1.Logs" />
+    <EntitySet Name="Patients" EntityType="SihappDBModel1.Patients" />
+    <EntitySet Name="Remission" EntityType="SihappDBModel1.Remission" />
+    <EntitySet Name="RemissionPayment" EntityType="SihappDBModel1.RemissionPayment" />
+    <EntitySet Name="SucessfullLogins" EntityType="SihappDBModel1.SucessfullLogins" />
+    <EntitySet Name="Supplies" EntityType="SihappDBModel1.Supplies" />
+    <EntitySet Name="SucessfullLoginsHistorical" EntityType="SihappDBModel1.SucessfullLoginsHistorical" />
+    <AssociationSet Name="FK__Appointme__Clini__6477ECF3" Association="SihappDBModel1.FK__Appointme__Clini__6477ECF3">
+      <End Role="ClinicMen" EntitySet="ClinicMen" />
+      <End Role="Appointment" EntitySet="Appointment" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Appointme__Clini__656C112C" Association="SihappDBModel1.FK__Appointme__Clini__656C112C">
+      <End Role="Clinic" EntitySet="Clinic" />
+      <End Role="Appointment" EntitySet="Appointment" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Appointme__Creat__6754599E" Association="SihappDBModel1.FK__Appointme__Creat__6754599E">
+      <End Role="ClinicMen" EntitySet="ClinicMen" />
+      <End Role="Appointment" EntitySet="Appointment" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Appointme__Creat__68487DD7" Association="SihappDBModel1.FK__Appointme__Creat__68487DD7">
+      <End Role="AuxiliarPersonal" EntitySet="AuxiliarPersonal" />
+      <End Role="Appointment" EntitySet="Appointment" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Appointme__Patie__66603565" Association="SihappDBModel1.FK__Appointme__Patie__66603565">
+      <End Role="Patients" EntitySet="Patients" />
+      <End Role="Appointment" EntitySet="Appointment" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Consult__Appoint__70DDC3D8" Association="SihappDBModel1.FK__Consult__Appoint__70DDC3D8">
+      <End Role="Appointment" EntitySet="Appointment" />
+      <End Role="Consult" EntitySet="Consult" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="SihappDBModel1.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserClaims" EntitySet="AspNetUserClaims" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" Association="SihappDBModel1.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserLogins" EntitySet="AspNetUserLogins" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AuxiliarP__UserI__6E01572D" Association="SihappDBModel1.FK__AuxiliarP__UserI__6E01572D">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AuxiliarPersonal" EntitySet="AuxiliarPersonal" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ClinicMen__UserI__6EF57B66" Association="SihappDBModel1.FK__ClinicMen__UserI__6EF57B66">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="ClinicMen" EntitySet="ClinicMen" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Patients__UserID__778AC167" Association="SihappDBModel1.FK__Patients__UserID__778AC167">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="Patients" EntitySet="Patients" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AuxiliarP__Clini__6D0D32F4" Association="SihappDBModel1.FK__AuxiliarP__Clini__6D0D32F4">
+      <End Role="Clinic" EntitySet="Clinic" />
+      <End Role="AuxiliarPersonal" EntitySet="AuxiliarPersonal" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ClinicMen__Clini__6FE99F9F" Association="SihappDBModel1.FK__ClinicMen__Clini__6FE99F9F">
+      <End Role="Clinic" EntitySet="Clinic" />
+      <End Role="ClinicMen" EntitySet="ClinicMen" />
+    </AssociationSet>
+    <AssociationSet Name="FK__CustomFie__Clini__75A278F5" Association="SihappDBModel1.FK__CustomFie__Clini__75A278F5">
+      <End Role="Clinic" EntitySet="Clinic" />
+      <End Role="CustomFields" EntitySet="CustomFields" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Patients__Clinic__787EE5A0" Association="SihappDBModel1.FK__Patients__Clinic__787EE5A0">
+      <End Role="Clinic" EntitySet="Clinic" />
+      <End Role="Patients" EntitySet="Patients" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Remission__Clini__7A672E12" Association="SihappDBModel1.FK__Remission__Clini__7A672E12">
+      <End Role="Clinic" EntitySet="Clinic" />
+      <End Role="Remission" EntitySet="Remission" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Remission__Clini__7C4F7684" Association="SihappDBModel1.FK__Remission__Clini__7C4F7684">
+      <End Role="Clinic" EntitySet="Clinic" />
+      <End Role="RemissionPayment" EntitySet="RemissionPayment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ConsultImgClinic" Association="SihappDBModel1.FK_ConsultImgClinic">
+      <End Role="Clinic" EntitySet="Clinic" />
+      <End Role="ConsultImages" EntitySet="ConsultImages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SuppliesClinic" Association="SihappDBModel1.FK_SuppliesClinic">
+      <End Role="Clinic" EntitySet="Clinic" />
+      <End Role="Supplies" EntitySet="Supplies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ClinicMenID" Association="SihappDBModel1.FK_ClinicMenID">
+      <End Role="ClinicMen" EntitySet="ClinicMen" />
+      <End Role="ConsultImages" EntitySet="ConsultImages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SuppliesClinicMen" Association="SihappDBModel1.FK_SuppliesClinicMen">
+      <End Role="ClinicMen" EntitySet="ClinicMen" />
+      <End Role="Supplies" EntitySet="Supplies" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Remission__Consu__797309D9" Association="SihappDBModel1.FK__Remission__Consu__797309D9">
+      <End Role="Consult" EntitySet="Consult" />
+      <End Role="Remission" EntitySet="Remission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ConsultID" Association="SihappDBModel1.FK_ConsultID">
+      <End Role="Consult" EntitySet="Consult" />
+      <End Role="ConsultImages" EntitySet="ConsultImages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PatientID" Association="SihappDBModel1.FK_PatientID">
+      <End Role="Patients" EntitySet="Patients" />
+      <End Role="ConsultImages" EntitySet="ConsultImages" />
+    </AssociationSet>
+    <AssociationSet Name="FK__CustomFie__Custo__76969D2E" Association="SihappDBModel1.FK__CustomFie__Custo__76969D2E">
+      <End Role="CustomFields" EntitySet="CustomFields" />
+      <End Role="CustomFieldValues" EntitySet="CustomFieldValues" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Remission__Remis__7B5B524B" Association="SihappDBModel1.FK__Remission__Remis__7B5B524B">
+      <End Role="Remission" EntitySet="Remission" />
+      <End Role="RemissionPayment" EntitySet="RemissionPayment" />
+    </AssociationSet>
+    <AssociationSet Name="AspNetUserRoles" Association="SihappDBModel1.AspNetUserRoles">
+      <End Role="AspNetRoles" EntitySet="AspNetRoles" />
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+    </AssociationSet>
+  </EntityContainer>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+  <EntityType Name="C__MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+      <PropertyRef Name="ContextKey" />
+    </Key>
+    <Property Name="MigrationId" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="ContextKey" Type="String" Nullable="false" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="Model" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="ProductVersion" Type="String" Nullable="false" MaxLength="32" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Appointment">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="CreatedClinicMen" Type="Guid" />
+    <Property Name="CreatedAuxiliar" Type="Guid" />
+    <Property Name="ClinicMenID" Type="Guid" Nullable="false" />
+    <Property Name="PatientID" Type="Guid" Nullable="false" />
+    <Property Name="AppointmentDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Address" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Comments" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Type" Type="Int32" Nullable="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="Number" Type="Int32" Nullable="false" />
+    <Property Name="ClinicID" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="ClinicMen" Relationship="SihappDBModel1.FK__Appointme__Clini__6477ECF3" FromRole="Appointment" ToRole="ClinicMen" />
+    <NavigationProperty Name="Clinic" Relationship="SihappDBModel1.FK__Appointme__Clini__656C112C" FromRole="Appointment" ToRole="Clinic" />
+    <NavigationProperty Name="ClinicMen1" Relationship="SihappDBModel1.FK__Appointme__Creat__6754599E" FromRole="Appointment" ToRole="ClinicMen" />
+    <NavigationProperty Name="AuxiliarPersonal" Relationship="SihappDBModel1.FK__Appointme__Creat__68487DD7" FromRole="Appointment" ToRole="AuxiliarPersonal" />
+    <NavigationProperty Name="Patients" Relationship="SihappDBModel1.FK__Appointme__Patie__66603565" FromRole="Appointment" ToRole="Patients" />
+    <NavigationProperty Name="Consult" Relationship="SihappDBModel1.FK__Consult__Appoint__70DDC3D8" FromRole="Appointment" ToRole="Consult" />
+  </EntityType>
+  <EntityType Name="AspNetRoles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUsers" Relationship="SihappDBModel1.AspNetUserRoles" FromRole="AspNetRoles" ToRole="AspNetUsers" />
+  </EntityType>
+  <EntityType Name="AspNetUserClaims">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ClaimType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ClaimValue" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUsers" Relationship="SihappDBModel1.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUserClaims" ToRole="AspNetUsers" />
+  </EntityType>
+  <EntityType Name="AspNetUserLogins">
+    <Key>
+      <PropertyRef Name="LoginProvider" />
+      <PropertyRef Name="ProviderKey" />
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="LoginProvider" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ProviderKey" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUsers" Relationship="SihappDBModel1.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUserLogins" ToRole="AspNetUsers" />
+  </EntityType>
+  <EntityType Name="AspNetUsers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="EmailConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="PasswordHash" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SecurityStamp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumberConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="TwoFactorEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="LockoutEndDateUtc" Type="DateTime" Precision="3" />
+    <Property Name="LockoutEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="AccessFailedCount" Type="Int32" Nullable="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="UserType" Type="Int32" Nullable="false" />
+    <Property Name="ClinicNumber" Type="Int32" />
+    <Property Name="Admin" Type="Boolean" Nullable="false" />
+    <Property Name="ClinicID" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="AspNetUserClaims" Relationship="SihappDBModel1.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUsers" ToRole="AspNetUserClaims" />
+    <NavigationProperty Name="AspNetUserLogins" Relationship="SihappDBModel1.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUsers" ToRole="AspNetUserLogins" />
+    <NavigationProperty Name="AuxiliarPersonal" Relationship="SihappDBModel1.FK__AuxiliarP__UserI__6E01572D" FromRole="AspNetUsers" ToRole="AuxiliarPersonal" />
+    <NavigationProperty Name="ClinicMen" Relationship="SihappDBModel1.FK__ClinicMen__UserI__6EF57B66" FromRole="AspNetUsers" ToRole="ClinicMen" />
+    <NavigationProperty Name="Patients" Relationship="SihappDBModel1.FK__Patients__UserID__778AC167" FromRole="AspNetUsers" ToRole="Patients" />
+    <NavigationProperty Name="AspNetRoles" Relationship="SihappDBModel1.AspNetUserRoles" FromRole="AspNetUsers" ToRole="AspNetRoles" />
+  </EntityType>
+  <EntityType Name="AuxiliarPersonal">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="ClinicID" Type="Guid" Nullable="false" />
+    <Property Name="UserID" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LastName1" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LastName2" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="BirthDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="HireDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Photo" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Address" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Number" Type="Int32" Nullable="false" />
+    <Property Name="Phone" Type="String" Nullable="false" MaxLength="512" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Appointment" Relationship="SihappDBModel1.FK__Appointme__Creat__68487DD7" FromRole="AuxiliarPersonal" ToRole="Appointment" />
+    <NavigationProperty Name="AspNetUsers" Relationship="SihappDBModel1.FK__AuxiliarP__UserI__6E01572D" FromRole="AuxiliarPersonal" ToRole="AspNetUsers" />
+    <NavigationProperty Name="Clinic" Relationship="SihappDBModel1.FK__AuxiliarP__Clini__6D0D32F4" FromRole="AuxiliarPersonal" ToRole="Clinic" />
+  </EntityType>
+  <EntityType Name="Clinic">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Number" Type="Int32" Nullable="false" />
+    <Property Name="Phone" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Image" Type="Binary" MaxLength="1" FixedLength="false" />
+    <Property Name="RFC" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="EndSubscriptionDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="RegisterDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="AppLevel" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Appointment" Relationship="SihappDBModel1.FK__Appointme__Clini__656C112C" FromRole="Clinic" ToRole="Appointment" />
+    <NavigationProperty Name="AuxiliarPersonal" Relationship="SihappDBModel1.FK__AuxiliarP__Clini__6D0D32F4" FromRole="Clinic" ToRole="AuxiliarPersonal" />
+    <NavigationProperty Name="ClinicMen" Relationship="SihappDBModel1.FK__ClinicMen__Clini__6FE99F9F" FromRole="Clinic" ToRole="ClinicMen" />
+    <NavigationProperty Name="CustomFields" Relationship="SihappDBModel1.FK__CustomFie__Clini__75A278F5" FromRole="Clinic" ToRole="CustomFields" />
+    <NavigationProperty Name="Patients" Relationship="SihappDBModel1.FK__Patients__Clinic__787EE5A0" FromRole="Clinic" ToRole="Patients" />
+    <NavigationProperty Name="Remission" Relationship="SihappDBModel1.FK__Remission__Clini__7A672E12" FromRole="Clinic" ToRole="Remission" />
+    <NavigationProperty Name="RemissionPayment" Relationship="SihappDBModel1.FK__Remission__Clini__7C4F7684" FromRole="Clinic" ToRole="RemissionPayment" />
+    <NavigationProperty Name="ConsultImages" Relationship="SihappDBModel1.FK_ConsultImgClinic" FromRole="Clinic" ToRole="ConsultImages" />
+    <NavigationProperty Name="Supplies" Relationship="SihappDBModel1.FK_SuppliesClinic" FromRole="Clinic" ToRole="Supplies" />
+  </EntityType>
+  <EntityType Name="ClinicMen">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="UserID" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ClinicID" Type="Guid" Nullable="false" />
+    <Property Name="Type" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="LastName1" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="LastName2" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CellPhone" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Photo" Type="Binary" MaxLength="1" FixedLength="false" />
+    <Property Name="RFC" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Cedula" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Specialty" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="HireDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="BirthDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Number" Type="Int32" Nullable="false" />
+    <Property Name="ConsultDuration" Type="Int32" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Appointment" Relationship="SihappDBModel1.FK__Appointme__Clini__6477ECF3" FromRole="ClinicMen" ToRole="Appointment" />
+    <NavigationProperty Name="Appointment1" Relationship="SihappDBModel1.FK__Appointme__Creat__6754599E" FromRole="ClinicMen" ToRole="Appointment" />
+    <NavigationProperty Name="AspNetUsers" Relationship="SihappDBModel1.FK__ClinicMen__UserI__6EF57B66" FromRole="ClinicMen" ToRole="AspNetUsers" />
+    <NavigationProperty Name="Clinic" Relationship="SihappDBModel1.FK__ClinicMen__Clini__6FE99F9F" FromRole="ClinicMen" ToRole="Clinic" />
+    <NavigationProperty Name="ConsultImages" Relationship="SihappDBModel1.FK_ClinicMenID" FromRole="ClinicMen" ToRole="ConsultImages" />
+    <NavigationProperty Name="Supplies" Relationship="SihappDBModel1.FK_SuppliesClinicMen" FromRole="ClinicMen" ToRole="Supplies" />
+  </EntityType>
+  <EntityType Name="Consult">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="AppointmentID" Type="Guid" Nullable="false" />
+    <Property Name="ConsultStartTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ConsultEndTime" Type="DateTime" Precision="3" />
+    <Property Name="Notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Amount" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="Number" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Appointment" Relationship="SihappDBModel1.FK__Consult__Appoint__70DDC3D8" FromRole="Consult" ToRole="Appointment" />
+    <NavigationProperty Name="Remission" Relationship="SihappDBModel1.FK__Remission__Consu__797309D9" FromRole="Consult" ToRole="Remission" />
+    <NavigationProperty Name="ConsultImages" Relationship="SihappDBModel1.FK_ConsultID" FromRole="Consult" ToRole="ConsultImages" />
+  </EntityType>
+  <EntityType Name="ConsultImages">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="ConsultID" Type="Guid" Nullable="false" />
+    <Property Name="PatientID" Type="Guid" Nullable="false" />
+    <Property Name="ClinicMenID" Type="Guid" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Image" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="BlobURL" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ClinicID" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="Clinic" Relationship="SihappDBModel1.FK_ConsultImgClinic" FromRole="ConsultImages" ToRole="Clinic" />
+    <NavigationProperty Name="ClinicMen" Relationship="SihappDBModel1.FK_ClinicMenID" FromRole="ConsultImages" ToRole="ClinicMen" />
+    <NavigationProperty Name="Consult" Relationship="SihappDBModel1.FK_ConsultID" FromRole="ConsultImages" ToRole="Consult" />
+    <NavigationProperty Name="Patients" Relationship="SihappDBModel1.FK_PatientID" FromRole="ConsultImages" ToRole="Patients" />
+  </EntityType>
+  <EntityType Name="CustomFields">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="FieldType" Type="Int32" Nullable="false" />
+    <Property Name="EntityType" Type="Int32" Nullable="false" />
+    <Property Name="AllowAllEntities" Type="Boolean" Nullable="false" />
+    <Property Name="FieldText" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ClinicID" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="Clinic" Relationship="SihappDBModel1.FK__CustomFie__Clini__75A278F5" FromRole="CustomFields" ToRole="Clinic" />
+    <NavigationProperty Name="CustomFieldValues" Relationship="SihappDBModel1.FK__CustomFie__Custo__76969D2E" FromRole="CustomFields" ToRole="CustomFieldValues" />
+  </EntityType>
+  <EntityType Name="CustomFieldValues">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="RelatedEntityID" Type="Guid" Nullable="false" />
+    <Property Name="CustomFieldId" Type="Guid" Nullable="false" />
+    <Property Name="Value" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="CustomFields" Relationship="SihappDBModel1.FK__CustomFie__Custo__76969D2E" FromRole="CustomFieldValues" ToRole="CustomFields" />
+  </EntityType>
+  <EntityType Name="Logs">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Message" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="InnerMessaje" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="EntityInnerMessage" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsException" Type="Boolean" Nullable="false" />
+    <Property Name="UserID" Type="Guid" />
+    <Property Name="ClinicID" Type="Guid" />
+  </EntityType>
+  <EntityType Name="Patients">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="LastName1" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="LastName2" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ClinicID" Type="Guid" Nullable="false" />
+    <Property Name="UserID" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Birthdate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Deathdate" Type="DateTime" Precision="3" />
+    <Property Name="Weight" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Height" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Photo" Type="Binary" MaxLength="1" FixedLength="false" />
+    <Property Name="PatientNumber" Type="Int32" Nullable="false" />
+    <Property Name="Phone" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+    <Property Name="Number" Type="Int32" Nullable="false" />
+    <Property Name="Notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Appointment" Relationship="SihappDBModel1.FK__Appointme__Patie__66603565" FromRole="Patients" ToRole="Appointment" />
+    <NavigationProperty Name="AspNetUsers" Relationship="SihappDBModel1.FK__Patients__UserID__778AC167" FromRole="Patients" ToRole="AspNetUsers" />
+    <NavigationProperty Name="Clinic" Relationship="SihappDBModel1.FK__Patients__Clinic__787EE5A0" FromRole="Patients" ToRole="Clinic" />
+    <NavigationProperty Name="ConsultImages" Relationship="SihappDBModel1.FK_PatientID" FromRole="Patients" ToRole="ConsultImages" />
+  </EntityType>
+  <EntityType Name="Remission">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="ConsultID" Type="Guid" Nullable="false" />
+    <Property Name="GrandTotal" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="VAT" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="PatientID" Type="Guid" Nullable="false" />
+    <Property Name="Notes" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Number" Type="Int32" Nullable="false" />
+    <Property Name="ClinicMenID" Type="Guid" Nullable="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="Payed" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="ClinicID" Type="Guid" Nullable="false" />
+    <Property Name="ExchangeRate" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <NavigationProperty Name="Clinic" Relationship="SihappDBModel1.FK__Remission__Clini__7A672E12" FromRole="Remission" ToRole="Clinic" />
+    <NavigationProperty Name="Consult" Relationship="SihappDBModel1.FK__Remission__Consu__797309D9" FromRole="Remission" ToRole="Consult" />
+    <NavigationProperty Name="RemissionPayment" Relationship="SihappDBModel1.FK__Remission__Remis__7B5B524B" FromRole="Remission" ToRole="RemissionPayment" />
+  </EntityType>
+  <EntityType Name="RemissionPayment">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="RemissionID" Type="Guid" Nullable="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Comments" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ClinicID" Type="Guid" Nullable="false" />
+    <Property Name="PaymentAmount" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="ExchangeRate" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <NavigationProperty Name="Clinic" Relationship="SihappDBModel1.FK__Remission__Clini__7C4F7684" FromRole="RemissionPayment" ToRole="Clinic" />
+    <NavigationProperty Name="Remission" Relationship="SihappDBModel1.FK__Remission__Remis__7B5B524B" FromRole="RemissionPayment" ToRole="Remission" />
+  </EntityType>
+  <EntityType Name="SucessfullLogins">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IP" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ClinicID" Type="Guid" Nullable="false" />
+    <Property Name="ClinicNumber" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Supplies">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Number" Type="Int64" Nullable="false" />
+    <Property Name="InternalCode" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Cost" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Price" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="PrivateUse" Type="Boolean" Nullable="false" />
+    <Property Name="ClinicMenID" Type="Guid" Nullable="false" />
+    <Property Name="CurrentStock" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="VatAmount" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="IEPSAmount" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="ClinicID" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="Clinic" Relationship="SihappDBModel1.FK_SuppliesClinic" FromRole="Supplies" ToRole="Clinic" />
+    <NavigationProperty Name="ClinicMen" Relationship="SihappDBModel1.FK_SuppliesClinicMen" FromRole="Supplies" ToRole="ClinicMen" />
+  </EntityType>
+  <EntityType Name="SucessfullLoginsHistorical">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="Date" />
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="ClinicID" />
+      <PropertyRef Name="ClinicNumber" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IP" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ClinicID" Type="Guid" Nullable="false" />
+    <Property Name="ClinicNumber" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Appointme__Clini__6477ECF3">
+    <End Type="SihappDBModel1.ClinicMen" Role="ClinicMen" Multiplicity="1" />
+    <End Type="SihappDBModel1.Appointment" Role="Appointment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ClinicMen">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Appointment">
+        <PropertyRef Name="ClinicMenID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Appointme__Clini__656C112C">
+    <End Type="SihappDBModel1.Clinic" Role="Clinic" Multiplicity="1" />
+    <End Type="SihappDBModel1.Appointment" Role="Appointment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clinic">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Appointment">
+        <PropertyRef Name="ClinicID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Appointme__Creat__6754599E">
+    <End Type="SihappDBModel1.ClinicMen" Role="ClinicMen" Multiplicity="0..1" />
+    <End Type="SihappDBModel1.Appointment" Role="Appointment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ClinicMen">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Appointment">
+        <PropertyRef Name="CreatedClinicMen" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Appointme__Creat__68487DD7">
+    <End Type="SihappDBModel1.AuxiliarPersonal" Role="AuxiliarPersonal" Multiplicity="0..1" />
+    <End Type="SihappDBModel1.Appointment" Role="Appointment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AuxiliarPersonal">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Appointment">
+        <PropertyRef Name="CreatedAuxiliar" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Appointme__Patie__66603565">
+    <End Type="SihappDBModel1.Patients" Role="Patients" Multiplicity="1" />
+    <End Type="SihappDBModel1.Appointment" Role="Appointment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Patients">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Appointment">
+        <PropertyRef Name="PatientID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Consult__Appoint__70DDC3D8">
+    <End Type="SihappDBModel1.Appointment" Role="Appointment" Multiplicity="1" />
+    <End Type="SihappDBModel1.Consult" Role="Consult" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Appointment">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Consult">
+        <PropertyRef Name="AppointmentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+    <End Type="SihappDBModel1.AspNetUsers" Role="AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="SihappDBModel1.AspNetUserClaims" Role="AspNetUserClaims" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserClaims">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+    <End Type="SihappDBModel1.AspNetUsers" Role="AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="SihappDBModel1.AspNetUserLogins" Role="AspNetUserLogins" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserLogins">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AuxiliarP__UserI__6E01572D">
+    <End Type="SihappDBModel1.AspNetUsers" Role="AspNetUsers" Multiplicity="1" />
+    <End Type="SihappDBModel1.AuxiliarPersonal" Role="AuxiliarPersonal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AuxiliarPersonal">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ClinicMen__UserI__6EF57B66">
+    <End Type="SihappDBModel1.AspNetUsers" Role="AspNetUsers" Multiplicity="1" />
+    <End Type="SihappDBModel1.ClinicMen" Role="ClinicMen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ClinicMen">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Patients__UserID__778AC167">
+    <End Type="SihappDBModel1.AspNetUsers" Role="AspNetUsers" Multiplicity="0..1" />
+    <End Type="SihappDBModel1.Patients" Role="Patients" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Patients">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AuxiliarP__Clini__6D0D32F4">
+    <End Type="SihappDBModel1.Clinic" Role="Clinic" Multiplicity="1" />
+    <End Type="SihappDBModel1.AuxiliarPersonal" Role="AuxiliarPersonal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clinic">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="AuxiliarPersonal">
+        <PropertyRef Name="ClinicID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ClinicMen__Clini__6FE99F9F">
+    <End Type="SihappDBModel1.Clinic" Role="Clinic" Multiplicity="1" />
+    <End Type="SihappDBModel1.ClinicMen" Role="ClinicMen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clinic">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ClinicMen">
+        <PropertyRef Name="ClinicID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__CustomFie__Clini__75A278F5">
+    <End Type="SihappDBModel1.Clinic" Role="Clinic" Multiplicity="1" />
+    <End Type="SihappDBModel1.CustomFields" Role="CustomFields" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clinic">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CustomFields">
+        <PropertyRef Name="ClinicID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Patients__Clinic__787EE5A0">
+    <End Type="SihappDBModel1.Clinic" Role="Clinic" Multiplicity="1" />
+    <End Type="SihappDBModel1.Patients" Role="Patients" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clinic">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Patients">
+        <PropertyRef Name="ClinicID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Remission__Clini__7A672E12">
+    <End Type="SihappDBModel1.Clinic" Role="Clinic" Multiplicity="1" />
+    <End Type="SihappDBModel1.Remission" Role="Remission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clinic">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Remission">
+        <PropertyRef Name="ClinicID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Remission__Clini__7C4F7684">
+    <End Type="SihappDBModel1.Clinic" Role="Clinic" Multiplicity="1" />
+    <End Type="SihappDBModel1.RemissionPayment" Role="RemissionPayment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clinic">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="RemissionPayment">
+        <PropertyRef Name="ClinicID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ConsultImgClinic">
+    <End Type="SihappDBModel1.Clinic" Role="Clinic" Multiplicity="1" />
+    <End Type="SihappDBModel1.ConsultImages" Role="ConsultImages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clinic">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ConsultImages">
+        <PropertyRef Name="ClinicID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SuppliesClinic">
+    <End Type="SihappDBModel1.Clinic" Role="Clinic" Multiplicity="1" />
+    <End Type="SihappDBModel1.Supplies" Role="Supplies" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clinic">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Supplies">
+        <PropertyRef Name="ClinicID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ClinicMenID">
+    <End Type="SihappDBModel1.ClinicMen" Role="ClinicMen" Multiplicity="1" />
+    <End Type="SihappDBModel1.ConsultImages" Role="ConsultImages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ClinicMen">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ConsultImages">
+        <PropertyRef Name="ClinicMenID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SuppliesClinicMen">
+    <End Type="SihappDBModel1.ClinicMen" Role="ClinicMen" Multiplicity="1" />
+    <End Type="SihappDBModel1.Supplies" Role="Supplies" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ClinicMen">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Supplies">
+        <PropertyRef Name="ClinicMenID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Remission__Consu__797309D9">
+    <End Type="SihappDBModel1.Consult" Role="Consult" Multiplicity="1" />
+    <End Type="SihappDBModel1.Remission" Role="Remission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Consult">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Remission">
+        <PropertyRef Name="ConsultID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ConsultID">
+    <End Type="SihappDBModel1.Consult" Role="Consult" Multiplicity="1" />
+    <End Type="SihappDBModel1.ConsultImages" Role="ConsultImages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Consult">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ConsultImages">
+        <PropertyRef Name="ConsultID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PatientID">
+    <End Type="SihappDBModel1.Patients" Role="Patients" Multiplicity="1" />
+    <End Type="SihappDBModel1.ConsultImages" Role="ConsultImages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Patients">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ConsultImages">
+        <PropertyRef Name="PatientID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__CustomFie__Custo__76969D2E">
+    <End Type="SihappDBModel1.CustomFields" Role="CustomFields" Multiplicity="1" />
+    <End Type="SihappDBModel1.CustomFieldValues" Role="CustomFieldValues" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CustomFields">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CustomFieldValues">
+        <PropertyRef Name="CustomFieldId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Remission__Remis__7B5B524B">
+    <End Type="SihappDBModel1.Remission" Role="Remission" Multiplicity="1" />
+    <End Type="SihappDBModel1.RemissionPayment" Role="RemissionPayment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Remission">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="RemissionPayment">
+        <PropertyRef Name="RemissionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AspNetUserRoles">
+    <End Type="SihappDBModel1.AspNetRoles" Role="AspNetRoles" Multiplicity="*" />
+    <End Type="SihappDBModel1.AspNetUsers" Role="AspNetUsers" Multiplicity="*" />
+  </Association>
+</Schema>

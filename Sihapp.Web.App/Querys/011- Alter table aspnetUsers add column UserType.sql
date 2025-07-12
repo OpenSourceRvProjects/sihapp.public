@@ -1,0 +1,1 @@
+alter Table AspNetUsers add UserType int not null default 0;

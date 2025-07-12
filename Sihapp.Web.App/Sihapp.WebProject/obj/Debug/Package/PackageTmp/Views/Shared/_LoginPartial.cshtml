@@ -1,0 +1,25 @@
+﻿@using Microsoft.AspNet.Identity;
+@using Sihapp.WebProject.Controllers;
+@if (Request.IsAuthenticated)
+{
+    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+    {
+    @Html.AntiForgeryToken()
+
+    <ul class="nav navbar-nav navbar-right">
+        <li  onmouseover="this.style.backgroundColor='#E8870C'" onmouseout="this.style.backgroundColor=''" style="font-size:smaller">
+            
+                @Html.ActionLink(new BasicController().GetClinicName() + " | Hola " + new BasicController().GetUserName() + " # Clínica " + new BasicController().GetClinicNumber(), "Index", "Home", routeValues: null, htmlAttributes: new { title = "Home" })
+            
+        </li>
+        <li  onmouseover="this.style.backgroundColor='#E8870C'" onmouseout="this.style.backgroundColor=''"><a href="javascript:document.getElementById('logoutForm').submit()">Salir</a></li>
+    </ul>
+    }
+}
+else
+{
+    <ul class="nav navbar-nav navbar-right">
+        <li>@Html.ActionLink("Registrarse", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+        <li>@Html.ActionLink("Ingresar", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+    </ul>
+}

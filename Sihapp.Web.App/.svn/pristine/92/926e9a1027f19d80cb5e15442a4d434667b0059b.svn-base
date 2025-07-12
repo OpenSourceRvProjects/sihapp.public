@@ -1,0 +1,3 @@
+var angularApp = angular.module('sihappAngularApp', []);
+angularApp.controller('settingsCtrl', function ($scope, $http) {
+});

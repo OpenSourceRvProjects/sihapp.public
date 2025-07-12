@@ -1,0 +1,171 @@
+﻿
+@{
+    ViewBag.Title = "Pagos de citas";
+}
+<script src="~/Scripts/Controllers/Patients/PatientPaymentsCtrl.js"></script>
+<span ng-init="backendData = @ViewBag.backendData"></span>
+
+<div ng-controller="patientPaymentsCtrl">
+    <div class="row">
+        <div class="col-sm-9">
+            <h3 style="color:#1F4F7B"><i class="fa fa-dollar"></i> Pago de pacientes</h3>
+
+         
+        </div>
+
+    </div>
+
+
+    
+
+    <div class="panel panel-success">
+        <div class="panel panel-heading">
+            <div class="row">
+                <div class="col-sm-4">
+                    Fecha inicio: <input type="date" ng-model="backendData.StartDate" value="{{ backendData.StartDate | date: 'yyyy-MM-dd' }}" class="form-control" />
+                </div>
+                <div class="col-sm-4">
+                    Fecha final: <input type="date" ng-model="backendData.EndDate" value="{{ backendData.EndDate | date: 'yyyy-MM-dd' }}" class="form-control" />
+                </div>
+
+
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <br />
+                    Paciente
+                    <br />
+                    <ui-select ng-model="$parent.selectedPatient" theme="select2" style="min-width: 300px;" title="Busca tu paciente">
+                        <ui-select-match placeholder="Selecciona paciente..">{{$select.selected.Text}}</ui-select-match>
+                        <ui-select-choices repeat="p in backendData.Patients track by $index"
+                                           refresh="searchPatients($select.search)">
+
+                            <div ng-bind-html="p.Text"></div>
+
+                        </ui-select-choices>
+                    </ui-select>
+
+                    <span ng-show="responseMsg.length > 0" style="color:red">
+                        {{responseMsg}}
+                    </span>
+                </div>
+                <div class="col-sm-3">
+                    <button style="margin-top:35px" type="button" class="btn btn-success" ng-click="search()"><i class="fa fa-filter"></i> Buscar</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <table class="table nav-stacked">
+        <tr style="background-color:bisque">
+            <td>#</td>
+            <td>Paciente</td>
+            <td>Prof. Salud</td>
+            <td>Total</td>
+            <td>Pendiente</td>
+            <td>Pagado</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr ng-repeat="r in remissions track by $index">
+            <td>{{r.Number}}</td>
+            <td>{{r.PatientName}}</td>
+            <td>{{r.ClinicMen}}</td>
+            <td>{{r.GrandTotal | currency}}</td>
+            <td>{{r.Pending | currency}}</td>
+            <td>{{r.Payed | currency}}</td>
+            <td></td>
+            <td><a href="#" ng-click="openPaymentPopUp(r)"><i class="fa fa-dollar"></i> Pagar</a></td>
+            <td><a href="#" ng-click="openDetails(r)"><i class="fa fa-info"></i> Detalle</a> </td>
+            
+
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>{{totalGrandTotal | currency}}</td>
+            <td>{{totalPending | currency}}</td>
+            <td>{{totalPayed | currency}}</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Pag {{currentPage + 1 }}  de {{totalPages}}</td>
+            <td colspan="6" align="right">
+                <a href="#" ng-click="first()" class="btn btn-primary btn-sm" ng-show="currentPage > 0"> Primera <i class="fa fa-arrow-left"></i>  </a>
+                <a href="#" ng-click="prev()" class="btn btn-primary btn-sm" ng-show="currentPage > 0">Anterior</a>
+                <span ng-repeat="l in  pageLinks()" ng-show="(currentPage+1) < totalPages">
+                    <a href="#" ng-click="goToPage(l)" class="btn btn-warning btn-sm">    {{l + 1}}</a>
+                </span>
+                <a href="#" ng-click="next()" class="btn btn-primary btn-sm" ng-show="(currentPage + 1)  < totalPages">Siguiente</a>
+
+                <a href="#" ng-click="last()" class="btn btn-primary btn-sm" ng-show="(currentPage + 1)  < totalPages"> Último <i class="fa fa-arrow-right"></i> </a>
+
+
+            </td>
+            <td></td>
+            <td></td>
+
+        </tr>
+
+
+    </table>
+
+    <div id="addPaymentModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" style="width:400px;">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <div class="row">
+                        <div class="col-sm-12" style="top:20px">
+                            <h4 class="modal-title" style="padding-left:45px">
+                                <i class="fa fa-dollar"></i>
+                                Agregar pago de paciente
+                            </h4>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="panel-body">
+
+                        <form>
+                            <div>
+                                <h4>Información del paciente</h4>
+                                <strong>{{selectedRemission.PatientName}}</strong>
+                            </div>
+                            <div>
+                                <h4># Nota</h4>
+                                <strong>{{selectedRemission.Number}}</strong>
+                            </div>
+                            <div>
+                                <h4>Monto a pagar</h4>
+                                {{selectedRemission.Pending | currency}}
+                                <br />
+                                <input type="text" class="form-control input-sm" ng-model="selectedRemission.Pending" placeholder="Monto a pagar">
+                            </div>
+                            <br />
+                            <textarea cols="4" rows="10" class="form-control" style="min-width: 100%" ng-model="paymentNotes"></textarea>
+                        </form>
+
+                        <span style="color:red" ng-show="errorMsg.length > 0">{{errorMsg}}</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-success" ng-click="addPayment()">Guardar</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>

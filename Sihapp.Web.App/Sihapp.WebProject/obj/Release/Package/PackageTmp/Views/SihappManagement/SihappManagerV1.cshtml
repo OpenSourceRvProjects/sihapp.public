@@ -1,0 +1,91 @@
+﻿
+@{
+    ViewBag.Title = "Cuentas Sihapp";
+}
+<script src="~/Scripts/Controllers/SihappManagement/SihappManagerV1Ctrl.js"></script>
+
+
+
+
+<div ng-controller="sihappManagerV1Ctrl">
+
+    <h2>Administración de cuentas en Sihapp</h2>
+    <h4>{{Count}} cuentas registradas</h4>
+
+    <table class="table nav-stacked">
+        <tr style="background-color:bisque">
+            <td># Clinica</td>
+            <td>Nombre</td>
+            <td>Titular clinica</td>
+            <td>Usuario admin</td>
+            <td>Cant. Pacientes</td>
+            <td>Email</td>
+            <td>Telefono</td>
+            <td></td>
+        </tr>
+        <tr ng-repeat="p in accounts track by $index">
+            <td>{{p.Number}}</td>
+            <td>{{p.ClinicName}}</td>
+            <td>{{p.MasterUser}}</td>
+            <td>{{p.User}}</td>
+            <td>{{p.PatientsQty}}</td>
+            <td>{{p.Email}}</td>
+            <td>{{p.Phone}}</td>
+            <td><a href="#" ng-hide="$index ===0 && pagination.Page ===0" ng-click="deleteAccount(p)"><i class="fa fa-ban"></i></a></td>
+        </tr>
+
+        <tr>
+            <td>Pag {{currentPage + 1 }}  de {{totalPages}}</td>
+            <td colspan="6" align="right">
+                <a href="#" ng-click="first()" class="btn btn-primary btn-sm" ng-show="currentPage > 0"> Primera <i class="fa fa-arrow-left"></i>  </a>
+                <a href="#" ng-click="prev()" class="btn btn-primary btn-sm" ng-show="currentPage > 0">Anterior</a>
+                <span ng-repeat="l in  pageLinks()" ng-show="(currentPage+1) < totalPages">
+                    <a href="#" ng-click="goToPage(l)" class="btn btn-warning btn-sm">    {{l + 1}}</a>
+                </span>
+                <a href="#" ng-click="next()" class="btn btn-primary btn-sm" ng-show="(currentPage + 1)  < totalPages">Siguiente</a>
+
+                <a href="#" ng-click="last()" class="btn btn-primary btn-sm" ng-show="(currentPage + 1)  < totalPages"> Último <i class="fa fa-arrow-right"></i> </a>
+
+
+            </td>
+            <td></td>
+
+        </tr>
+        
+    </table>
+
+    <div id="deleteAccountModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" style="width:400px;">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <div class="row">
+                        <div class="col-sm-12" style="top:20px">
+                            <h4 class="modal-title" style="padding-left:45px">
+                                <i class="fa fa-user"></i>
+                                Borrar cuenta Sihapp
+                            </h4>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="panel-body">
+
+                        ¿Esta seguro de querer borrar la cuenta? Escribe la contraseña master del sistema.
+                        <input type="password" class="form-control input-sm" ng-model="masterKey"/>
+                        <br />
+                        <span style="color:red" ng-show="responseMessage.length > 0">{{responseMessage}}</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-success" ng-click="delete()">Borrar</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="sihappWeb" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\ROLANDO\\Desktop\\Sihapp\ Code\\Sihapp\\Sihapp\.Web\.App\\Sihapp\.WebProject\\obj\\Debug\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\ROLANDO\\Desktop\\Sihapp\ Code\\Sihapp\\Sihapp\.Web\.App\\Sihapp\.WebProject\\obj\\Debug\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="Sihapp.WebProject.Backend.DataAccess.EntitiesRestore-Web.config Connection String" description="" value="Sihapp.WebProject.Backend.DataAccess.EntitiesRestore_ConnectionString" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\ROLANDO\\Desktop\\Sihapp\ Code\\Sihapp\\Sihapp\.Web\.App\\Sihapp\.WebProject\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Sihapp.WebProject.Backend.DataAccess.EntitiesRestore']/@connectionString" />
+  </parameter>
+  <parameter name="SihappDB-Web.config Connection String" description="" value="Server=shdbserver.database.windows.net,1433;Database=SihappWebDB;User ID=sihappDB;Password=sih#220417;Trusted_Connection=False;Encrypt=True;Connection Timeout=30;Enlist=False;" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\ROLANDO\\Desktop\\Sihapp\ Code\\Sihapp\\Sihapp\.Web\.App\\Sihapp\.WebProject\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='SihappDB']/@connectionString" />
+  </parameter>
+  <parameter name="SihappDBEntities-Web.config Connection String" description="" value="metadata=res://*/Backend.DataAccess.SihappModelEntities.csdl|res://*/Backend.DataAccess.SihappModelEntities.ssdl|res://*/Backend.DataAccess.SihappModelEntities.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=shdbserver.database.windows.net;initial catalog=SihappWebDB;persist security info=True;user id=sihappDB;password=sih#220417;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\ROLANDO\\Desktop\\Sihapp\ Code\\Sihapp\\Sihapp\.Web\.App\\Sihapp\.WebProject\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='SihappDBEntities']/@connectionString" />
+  </parameter>
+</parameters>

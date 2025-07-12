@@ -1,0 +1,268 @@
+﻿
+@{
+    ViewBag.Title = "Lista de pacientes";
+}
+@using Sihapp.WebProject.Models.TypesCatalogs;
+
+<script src="~/Scripts/Controllers/Patients/PatientsListCtrl.js"></script>
+
+<style>
+    .errorInBox {
+        border: 1px solid red;
+    }
+</style>
+<span ng-init="customFieldsTypes = @ViewBag.CustomFieldsTypes"></span>
+<div ng-controller="patientsListCtrl">
+
+    <div class="row">
+        <div class="col-sm-9">
+            <h2>Lista de pacientes</h2>
+
+            <h4>{{PatientsQty}} pacientes registrados</h4>
+        </div>
+        <div class="col-sm-3">
+            <br />
+            <button type="button" class="btn btn-success pull-right" ng-click="showAddPatientModal()">Agregar paciente</button>
+        </div>
+    </div>
+    <br />
+    <div class="panel panel-success">
+        <div class="panel panel-heading">
+            <div class="row">
+                <div class="col-sm-3">
+                    Busqueda : <input type="text" ng-model="searchText" class="form-control" />
+                </div>
+
+                <div class="col-sm-3">
+                    <button style="margin-top:20px" type="button" class="btn btn-success" ng-click="searchPanel()"><i class="fa fa-filter"></i> Buscar</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <table class="table nav-stacked">
+        <tr style="background-color:bisque">
+            <td># Paciente</td>
+            <td>Nombre</td>
+            <td>Telefono</td>
+            <td>Dirección</td>
+            <td>Fecha de nacimiento</td>
+            <td>Tiene usuario</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr ng-repeat="p in patientItems track by $index">
+            <td>{{p.Number}}</td>
+            <td>{{p.Name}}</td>
+            <td>{{p.Phone}}</td>
+            <td>{{p.Address}}</td>
+            <td>{{p.BirthDate | date}}</td>
+            <td><input type="checkbox" ng-model="p.HasUser" ng-disabled="true" /></td>
+            <td><a href="#" ng-click="goToExpedient(p.ID)"><i class="fa fa-folder-open"></i></a></td>
+            <td><a href="#" ng-click="openDeletePopUp(p)"><i class="fa fa-ban"></i></a></td>
+
+        </tr>
+        <tr>
+            <td>Pag {{currentPage + 1 }}  de {{totalPages}}</td>
+            <td colspan="6" align="right">
+                <a href="#" ng-click="first()" class="btn btn-primary btn-sm" ng-show="currentPage > 0"> Primera <i class="fa fa-arrow-left"></i>  </a>
+                <a href="#" ng-click="prev()" class="btn btn-primary btn-sm" ng-show="currentPage > 0">Anterior</a>
+                <span ng-repeat="l in  pageLinks()" ng-show="(currentPage+1) < totalPages">
+                    <a href="#" ng-click="goToPage(l)" class="btn btn-warning btn-sm">    {{l + 1}}</a>
+                </span>
+                <a href="#" ng-click="next()" class="btn btn-primary btn-sm" ng-show="(currentPage + 1)  < totalPages">Siguiente</a>
+
+                <a href="#" ng-click="last()" class="btn btn-primary btn-sm" ng-show="(currentPage + 1)  < totalPages"> Último <i class="fa fa-arrow-right"></i> </a>
+
+
+            </td>
+            <td></td>
+
+        </tr>
+    </table>
+
+    <div id="addPatientModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" style="width:65%;">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <div class="row">
+                        <div class="col-sm-12" style="top:20px">
+                            <h4 class="modal-title" style="text-align:center">
+                                <i class="fa fa-user"></i>
+                                Agregar paciente
+                                <br />
+                            </h4>
+                            <br />
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="panel-body">
+
+                        <form>
+                            <h4 style="text-align:center">Información del paciente</h4>
+                            <br />
+
+                            <div class="row">
+
+                                <div class="col-sm-4 text-center">
+                                    <input type="text" style="margin: 0 auto" class="form-control input-sm" ng-model="name" placeholder="Nombre">
+                                    <br />
+                                </div>
+
+                                <div class="col-sm-4 text-center">
+                                    <input type="text" style="margin: 0 auto" class="form-control input-sm" ng-model="lastName1" placeholder="Apellido paterno ">
+                                    <br />
+                                </div>
+
+                                <div class="col-sm-4 text-center">
+                                    <input type="text" style="margin: 0 auto" class="form-control input-sm" ng-model="lastName2" placeholder="Apellido materno ">
+                                    <br />
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4 text-center">
+                                    <input type="date" style="margin: 0 auto" class="form-control input-sm" ng-model="birthDate" placeholder="Fecha de nacimiento ">
+                                    <br />
+                                </div>
+                                <div class="col-sm-4 text-center">
+                                    <input type="text" style="margin: 0 auto" class="form-control input-sm" ng-model="weight" placeholder="Peso ">
+                                    <br />
+                                </div>
+                                <div class="col-sm-4 text-center">
+                                    <input type="text" style="margin: 0 auto" class="form-control input-sm" ng-model="heigth" placeholder="Estatura">
+                                    <br />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4 text-center">
+                                    <input type="text" style="margin: 0 auto" class="form-control input-sm" ng-model="phone" placeholder="Telefono">
+                                    <br />
+                                </div>
+                                <div class="col-sm-4 text-center">
+                                    <input type="text" style="margin: 0 auto" class="form-control input-sm" ng-model="email" placeholder="Correo">
+                                    <br />
+                                </div>
+                                <div class="col-sm-4 text-center">
+                                    <input type="text" style="margin: 0 auto" class="form-control input-sm" ng-model="address" placeholder="Dirección">
+                                    <br />
+                                </div>
+                            </div>
+                            <label>Crear usuario</label>
+                            <input type="checkbox" ng-model="createUser">
+
+                            <span ng-show="createUser">
+                                <input type="text" class="form-control input-sm" ng-model="userName" placeholder="Usuario">
+                                <br />
+                                <input type="password" class="form-control input-sm" ng-model="password" placeholder="Password">
+                                <br />
+                            </span>
+                            
+                            <hr />
+                            <h5><strong>Campos adicionales</strong></h5>
+                            <div ng-show="presetFields.length > 0" ng-repeat="pf in presetFields">
+
+                                <div class="row">
+                                    <div class="col-sm-6 text-center">
+                                        {{pf.FieldText}}
+                                        <br />
+                                    </div>
+                                    <div class="col-sm-6 text-center">
+                                        <input ng-show="pf.FieldType == @CustomFieldTypesCatalog.Number" type="number" style="margin: 0 auto" class="input-sm" ng-model="pf.Value" />
+                                        <input ng-show="pf.FieldType == @CustomFieldTypesCatalog.TextBox" type="text" style="margin: 0 auto" class="input-sm" ng-model="pf.Value" />
+                                        <input ng-show="pf.FieldType == @CustomFieldTypesCatalog.Bool" type="checkbox" style="margin: 0 auto" class="input-sm" ng-model="pf.Value" />
+
+                                        <br />
+                                    </div>
+                                    <hr />
+                                </div>
+                            </div>
+
+                            <hr />
+                            <h5><strong>Campos personalizables <a href="#" ng-click="addCustomFieldToView()"><i class="fa fa-plus"></i></a></strong></h5>
+
+
+
+                            <div ng-show="customFieldsValuesToRequest.length > 0" ng-repeat="cf in customFieldsValuesToRequest">
+
+
+                                <div class="row">
+                                    <div class="col-sm-4 text-center">
+                                        <h5>Tipo de dato</h5>
+                                        <select style="margin: 0 auto" class="input-sm" ng-model="cf.FieldType"
+                                                ng-options="st.Value as st.Text for st in customFieldsTypes"></select>
+
+                                    </div>
+                                    <div class="col-sm-4 text-center">
+                                        <h5>Nombre Campo</h5>
+                                        <input type="text" style="margin: 0 auto" class="input-sm" ng-class="cf.FieldText.length > 0? '' :'errorInBox'" ng-model="cf.FieldText" />
+                                        <br />
+                                    </div>
+                                    <div class="col-sm-4 text-center">
+                                        <h5>Valor</h5>
+                                        <input ng-show="cf.FieldType == @CustomFieldTypesCatalog.Number" type="number" style="margin: 0 auto" class="input-sm" ng-class="cf.Value !== undefined ? '' :'errorInBox'" ng-model="cf.Value" />
+                                        <input ng-show="cf.FieldType == @CustomFieldTypesCatalog.TextBox" type="text" style="margin: 0 auto" class="input-sm" ng-class="cf.Value.length > 0? '' :'errorInBox'" ng-model="cf.Value" />
+                                        <input ng-show="cf.FieldType == @CustomFieldTypesCatalog.Bool" type="checkbox" style="margin: 0 auto" class="input-sm" ng-model="cf.Value" />
+
+                                        <br />
+                                    </div>
+                                    <hr />
+                                </div>
+
+                            </div>
+                        </form>
+
+                        <span style="color:red" ng-show="responseMessage.length > 0">{{responseMessage}}</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-success" ng-click="savePatient()">Guardar</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="deletePatientModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" style="width:400px;">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <div class="row">
+                        <div class="col-sm-12" style="top:20px">
+                            <h4 class="modal-title" style="padding-left:45px">
+                                <i class="fa fa-user"></i>
+                                Borrar paciente
+                            </h4>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="panel-body">
+
+                        ¿Esta seguro de querer borrar el paciente? Una vez borrado no podrá recuperarse
+                        <br />
+                        <span style="color:red" ng-show="responseMessage.length > 0">{{responseMessage}}</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-success" ng-click="delete()">Borrar</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+

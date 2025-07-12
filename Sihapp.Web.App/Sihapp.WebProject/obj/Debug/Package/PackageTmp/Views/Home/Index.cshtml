@@ -1,0 +1,53 @@
+﻿@{
+    ViewBag.Title = "Sihapp Web";
+}
+
+<div class="jumbotron">
+   
+    <div style="text-align:center">
+        <h3>Sihapp Web. El sistema para la administración de tus pacientes</h3>
+
+        @if (ViewBag.UserType == 0)
+        {
+            <a href="#" class="btn btn-sq-lg btn-success" onclick="location.href='../ClinicMen/Settings'">
+                <i class="fa fa-wrench fa-5x" style="height:75px; width:150px;"></i><br />
+                Configuración <br>
+            </a>
+
+            @*<button type="button" class="btn btn-info" onclick="location.href='../ClinicMen/Settings'"><i class="fa fa-wrench"></i> Configuración</button>*@
+            @*<a href="~/ClinicMen/Settings">Configuración</a>*@
+        }
+
+
+        @if (ViewBag.UserType != 1)
+        {
+            <a href="#" class="btn btn-sq-lg btn-primary" onclick="location.href='../Appointment/AppointmentsList?option=1'">
+                <i class="fa fa-pencil fa-5x" style="height:75px; width:150px;"></i><br />
+                Crear cita <br>
+            </a>
+        }
+
+
+        <a href="#" class="btn btn-sq-lg btn-warning" onclick="location.href='../Appointment/AppointmentsList'">
+            <i class="fa fa-calendar fa-5x" style="height:75px; width:150px;"></i><br />
+            Revisar Agenda <br>
+        </a>
+
+        @if (ViewBag.UserType != 1)
+        {
+            <a href="#" class="btn btn-sq-lg btn-danger" onclick="location.href='../Patients/PatientsList'">
+                <i class="fa fa-user fa-5x" style="height:75px; width:150px;"></i><br />
+                Pacientes<br>
+            </a>
+        }
+        @if (ViewBag.UserType != 1)
+        {
+            <a href="#" class="btn btn-sq-lg btn-success" onclick="location.href = '../Patients/PatientConsultPayments'">
+                <i class="fa fa-dollar fa-5x" style="height:75px; width:150px;"></i><br />
+                Pagos de pacientes<br>
+            </a>
+        }
+
+    </div>
+
+</div>

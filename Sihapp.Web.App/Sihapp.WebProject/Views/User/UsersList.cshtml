@@ -1,0 +1,231 @@
+﻿
+@{
+    ViewBag.Title = "Lista de usuarios";
+}
+
+<script src="~/Scripts/Controllers/Utils/Utils.js"></script>
+<script src="~/Scripts/Controllers/Users/UsersListCtrl.js"></script>
+
+
+<span ng-init="backendData = @ViewBag.BackendData"></span>
+<div ng-controller="usersListCtrl">
+
+    <div class="row">
+        <div class="col-sm-9">
+            <h2>Lista de usuarios</h2>
+          
+        </div>
+        <div class="col-sm-3">
+            <br />
+            <button type="button" class="btn btn-success pull-right" ng-click="showAddUserModal()">Agregar usuario</button>
+        </div>
+    </div>
+
+    <table class="table nav-stacked">
+        <tr style="background-color:bisque">
+            <td>Usuario</td>
+            <td>Nombre</td>
+            <td>Perfil</td>
+            <td>Conteo de citas</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr ng-repeat="u in userItems track by $index">
+
+            <td>{{u.UserName}}</td>
+            <td>{{u.Name}}</td>
+            <td>{{u.TypeName}}</td>
+            <td>{{u.AppointmentCount}}</td>
+            <td>{{u.CreationDate | date}}</td>
+            <td><a href="#" ng-click="selectUser(u)"><i class="fa fa-key"></i>Cambiar password</a></td>
+      
+
+        </tr>
+        <tr>
+            <td>Pag {{currentPage + 1 }}  de {{totalPages}}</td>
+            <td colspan="6" align="right">
+                <a href="#" ng-click="first()" class="btn btn-primary btn-sm" ng-show="currentPage > 0"> Primera <i class="fa fa-arrow-left"></i>  </a>
+                <a href="#" ng-click="prev()" class="btn btn-primary btn-sm" ng-show="currentPage > 0">Anterior</a>
+                <span ng-repeat="l in  pageLinks()" ng-show="(currentPage+1) < totalPages">
+                    <a href="#" ng-click="goToPage(l)" class="btn btn-warning btn-sm">    {{l + 1}}</a>
+                </span>
+                <a href="#" ng-click="next()" class="btn btn-primary btn-sm" ng-show="(currentPage + 1)  < totalPages">Siguiente</a>
+
+                <a href="#" ng-click="last()" class="btn btn-primary btn-sm" ng-show="(currentPage + 1)  < totalPages"> Último <i class="fa fa-arrow-right"></i> </a>
+
+
+            </td>
+            <td></td>
+
+        </tr>
+    </table>
+
+    <div id="addUserModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" style="width:450px;">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <div class="row">
+                        <div  style="text-align:center">
+                            <h4 class="modal-title" style="padding-left:45px">
+                                <i class="fa fa-user"></i>
+                                Agregar usuario
+                            </h4>
+                        </div>
+                      
+                    </div>
+                    <br />
+                    <br />
+                    <div class="row" style="text-align:center">
+                        <div>
+                            <label for="name">Tipo de usuario</label>
+                            <select name="repeatSelect" class="input-sm" required="required" ng-model="userType" ng-init="userType='Seleccione un tipo de usuario'">
+                                <option>Profesional de salud</option>
+                                <option>Auxiliar</option>
+                                <option>Paciente</option>
+                            </select>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="panel-body">
+
+
+                        <form ng-show="userType === 'Auxiliar' || userType==='Profesional de salud'">
+                            <div>
+                                <h4>{{userType}}</h4>
+                                <input type="text" class="form-control input-sm" ng-model="cmUserName" placeholder="Usuario">
+                                <br />
+                                <input type="password" class="form-control input-sm" ng-model="cmPassword" placeholder="Password">
+                                <br />
+                                <input type="text" class="form-control input-sm" ng-model="cmName" placeholder="Nombre">
+                                <br />
+                                <input type="text" class="form-control input-sm" ng-model="cmLastName1" placeholder="Apellido paterno ">
+                                <br />
+                                <input type="text" class="form-control input-sm" ng-model="cmLastName2" placeholder="Apellido materno ">
+                                <br />
+                                <input type="date" class="form-control input-sm" ng-model="cmBirthDate" placeholder="Fecha de nacimiento ">
+                                <br />
+                                <input type="text" class="form-control input-sm" ng-model="cmPhone" placeholder="Telefono">
+                                <br />
+                                <input type="text" class="form-control input-sm" ng-model="cmEmail" placeholder="Correo">
+                                <br />
+                                <input type="text" class="form-control input-sm" ng-model="cmAddress" placeholder="Dirección">
+                                <br />
+                                <br />
+
+                            </div>
+                            <div ng-show="errorMsg.length > 0" class="alert alert-danger bs-alert-old-docs">
+                                <span>{{errorMsg}}</span>
+                            </div>
+
+                        </form>
+
+                        <form ng-show="userType === 'Paciente'">
+                            <div>
+
+                                <select class="input-sm" ng-model="selectedPatient.Value">
+                                    <option ng-repeat="b in backendData" value="{{b.Value}}">{{b.Text}}</option>
+
+                                </select>
+                                <br />
+                                <br />
+                                <br />
+                                <span ng-show="selectedPatient.Value">
+                                    <input type="text" class="form-control input-sm" ng-model="patientUserName" placeholder="Usuario">
+                                    <br />
+                                    <input type="password" class="form-control input-sm" ng-model="patientPassword" placeholder="Password">
+                                    <br />
+                                </span>
+
+                                <div ng-show="errorMsg.length > 0" class="alert alert-danger bs-alert-old-docs">
+                                    <span>{{errorMsg}}</span>
+                                </div>
+                                
+
+                                <div>
+                                    <h5>¿No existe el paciente?. </h5>
+                                    <br />
+                                    <h5> Puedes agregar un nuevo paciente y su correspondiente usuario  <a href="~/Patients/PatientsList">aqui</a></h5>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+                <div class="modal-footer" ng-show="userType === 'Profesional de salud'">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-success" ng-click="save()">Guardar</button>
+                </div>
+
+                <div class="modal-footer" ng-show="userType === 'Auxiliar'">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-success" ng-click="saveAuxiliar()">Guardar aux </button>
+                </div>
+
+                <div class="modal-footer" ng-show="userType === 'Paciente'">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-success" ng-click="savePatient()">Guardar paciente</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="changePasswordModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" style="width:400px;">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <div class="row">
+                        <div class="col-sm-12" style="top:20px">
+                            <h4 class="modal-title" style="padding-left:45px">
+                                <i class="fa fa-key"></i>
+                                Cambiar contraseña de {{selectedUser.Name}}
+                            </h4>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="panel-body">
+
+
+                        <form>
+                            <div>
+                                
+                                <input type="password" class="form-control input-sm" ng-model="password" placeholder="Usuario">
+                                <br />
+                                <input type="password" class="form-control input-sm" ng-model="confirmPassword" placeholder="Password">
+                                <br />
+
+                            </div>
+                        </form>
+
+
+                        <span ng-show="errorMsg.length > 0" style="color:red">
+                            {{errorMsg}}
+                        </span>
+
+                    </div>
+                </div>
+            
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-success" ng-click="changePassword()">Cambiar</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+
